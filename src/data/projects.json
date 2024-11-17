@@ -17,6 +17,11 @@
           "name": "Source",
           "href": "https://github.com/Yincard/blog-hackathon",
           "icon": "github"
+        },
+        {
+          "name": "Hackathon Presentation",
+          "href": "https://youtu.be/4vF6VUuJSwk",
+          "icon": "youtube"
         }
       ]
     },
