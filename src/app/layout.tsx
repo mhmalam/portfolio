@@ -16,6 +16,9 @@ const calistoga = Calistoga({
 export const metadata: Metadata = {
   title: "Alam's Portfolio",
   description: "My personal site to showcase my work.",
+  icons: {
+    icon: "favicon.webp", // 
+  },
 };
 
 export default function RootLayout({
