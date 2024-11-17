@@ -9,11 +9,7 @@ export default function Footer() {
         <p className="text-center text-xs text-muted-foreground">
           <span>&copy; {new Date().getFullYear()}</span>{" "}
           <Link className="link" href="/">
-            tedawf.com
-          </Link>
-          {" | "}
-          <Link className="link font-bold" href="/privacy">
-            privacy?
+            localhost:3000
           </Link>
         </p>
       </section>

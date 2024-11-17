@@ -1,96 +1,48 @@
 {
   "projects": [
     {
-      "name": "Tradingview Telegram Alerts",
-      "description": "Real-time trading alerts with chart snapshots sent to Telegram, designed to keep traders informed and responsive to market changes",
-      "image": "/tv-tele-alerts.png",
-      "tags": [
-        "Python",
-        "FastAPI",
-        "Docker",
-        "Fly.io",
-        "Selenium",
-        "Telegram Bot API"
-      ],
+      "name": "Guess The Number",
+      "description": "As a Freelance Discord Bot Developer, I created and maintained countless bots. The most memorable one, the 'Guess The Number' bot, became my largest and most successful project. It reached over 12,000,000 users across 13,000 servers, showcasing its popularity and reliability. This bot enabled users to engage in guessing games within their Discord servers, handling thousands of game instances simultaneously. Utilizing MongoDB for data storage and Redis caching for optimization, the bot efficiently managed and sorted through a massive volume of messages.",
+      "image": "/gtn.webp",
+      "tags": ["MongoDB", "Redis", "Node.js", "Discord API", "Caching"],
+      "links": []
+    },
+    {
+      "name": "Blogify",
+      "description": "Blogify is a modern and intuitive blogging platform designed to empower users to create, share, and manage blog content effortlessly. Developed during a hackathon, it offers a seamless user experience with features focused on customization, accessibility, and community engagement.",
+      "image": "/blogify.png",
+      "tags": ["React.js", "Next.js", "Node.js", "Firebase", "MySQL", "Prisma"],
       "links": [
         {
           "name": "Source",
-          "href": "https://github.com/tedawf/tradingview-telegram-alerts",
+          "href": "https://github.com/Yincard/blog-hackathon",
           "icon": "github"
         }
       ]
     },
     {
-      "name": "NFTVue",
-      "description": "Non-Fungible Tokens (NFTs) Gallery Viewer website that allows users to connect their crypto wallets to view and verify their tokens",
-      "href": "https://nftvue.vercel.app",
-      "image": "/nftvue.png",
-      "tags": [
-        "NextJS",
-        "TailwindCSS",
-        "MetaMask",
-        "WalletConnect",
-        "Web3",
-        "NFTScan",
-        "HashKey DID"
-      ],
+      "name": "Discord Metric System",
+      "description": "Developed an advanced real-time metric collection and visualization system utilizing Discord's API and the MERN stack. This project involved collecting, processing, and visualizing metrics data efficiently from Discord servers, featuring a streamlined caching pipeline and high-performance APIs for seamless updates and data visualization.",
+      "image": "/metrics.webp",
+      "tags": ["MERN Stack", "Redis", "MongoDB", "Express.js", "ReactJS", "Discord API"],
       "links": [
-        {
-          "name": "Website",
-          "href": "https://nftvue.vercel.app",
-          "icon": "globe"
-        }
-      ]
-    },
-    {
-      "name": "Portfolio 2023 (Outdated)",
-      "description": "Simple markdown portfolio made with Astro 🚀",
-      "href": "https://tedawf-dot-com.netlify.app",
-      "image": "/old-portfolio.png",
-      "tags": ["Astro", "TailwindCSS", "Netlify", "SEO"],
-      "links": [
-        {
-          "name": "Website",
-          "href": "https://tedawf-dot-com.netlify.app",
-          "icon": "globe"
-        },
         {
           "name": "Source",
-          "href": "https://github.com/tedawf/portfolio-2023",
+          "href": "https://github.com/Yincard/ChatFlow",
           "icon": "github"
         }
       ]
     },
     {
-      "name": "Rapid Ride Fight (Final Year)",
-      "description": "3D capture-the-flag, multiplayer boat fighting, with smart AI and water graphics",
-      "href": "https://games.digipen.edu/games/rapid-ride-fight",
-      "image": "/rrf.png",
-      "tags": ["C/C++", "OpenGL", "Custom Game Engine", "3D"],
+      "name": "Whack-A-Mole",
+      "description": "Created the software for a Whack-A-Mole game combining real-time interaction with hardware and an engaging UI. This project showcased hardware integration and full-stack development skills, featuring a dynamic game interface synchronized with physical sensors and motors, real-time WebSocket communication, and a responsive React.js-based UI.",
+      "image": "/whackamole.png",
+      "tags": ["Node.js", "React.js", "WebSocket", "Arduino", "Hardware Integration", "Express.js"],
       "links": [
         {
-          "name": "Gameplay",
-          "href": "https://www.youtube.com/watch?v=bge3fiypg5U",
-          "icon": "youtube"
-        },
-        {
-          "name": "Trailer",
-          "href": "https://www.youtube.com/watch?v=PNAO-aI1Daw",
-          "icon": "youtube"
-        }
-      ]
-    },
-    {
-      "name": "Glowing Under (2nd Year)",
-      "description": "2D platformer with a focus on puzzle-solving, no-death exploration and storytelling",
-      "href": "https://games.digipen.edu/games/glowing-under",
-      "image": "/gu.png",
-      "tags": ["C/C++", "OpenGL", "Custom Game Engine", "2D"],
-      "links": [
-        {
-          "name": "Trailer",
-          "href": "https://www.youtube.com/watch?v=u6RYwBZlSfg",
-          "icon": "youtube"
+          "name": "Source",
+          "href": "https://github.com/Yincard/Whack-A-Mole",
+          "icon": "github"
         }
       ]
     }

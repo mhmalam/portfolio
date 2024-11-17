@@ -1,37 +1,23 @@
 {
   "education": [
     {
-      "name": "Digipen Institute of Technology Singapore",
-      "href": "https://www.digipen.edu.sg",
-      "title": "BS in Computer Science in Real-Time Interactive Simulation",
-      "logo": "/digipen.png",
-      "start": "Sep 2019",
-      "end": "Apr 2023",
+      "name": "Columbia University",
+      "href": "https://www.columbia.edu/",
+      "title": "BS in Computer Science",
+      "logo": "/columbia.jpg",
+      "start": "Aug 2023",
+      "end": "May 2027",
       "description": [
-        "Graduated with a Minor in Mathematics",
-        "President of Digipen Student Management Committee for freshman year",
-        "3-time recipient of the Dean's Honor List"
+        "Sophomore in the engineering school majoring in Computer Science",
+        "Rocco & Catherine Commisso Scholar"
       ],
       "links": [
         {
-          "name": "Final Year Project",
-          "href": "https://games.digipen.edu/games/rapid-ride-fight",
-          "icon": "globe"
-        },
-        {
-          "name": "2nd Year Project",
-          "href": "https://games.digipen.edu/games/glowing-under",
-          "icon": "globe"
+          "name": "1st Year Project",
+          "href": "https://github.com/Yincard/Whack-A-Mole",
+          "icon": "github"
         }
       ]
-    },
-    {
-      "name": "Singapore Polytechnic",
-      "href": "https://www.sp.edu.sg",
-      "title": "Diploma in Games Design and Development",
-      "logo": "/sp.png",
-      "start": "Apr 2014",
-      "end": "May 2017"
     }
   ]
 }
