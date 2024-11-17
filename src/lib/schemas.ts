@@ -1,7 +1,6 @@
 import dynamicIconImports from "lucide-react/dynamicIconImports";
 import { z } from "zod";
 
-
 const iconLink = z.object({
   name: z.string(),
   href: z.string().url(),
@@ -14,6 +13,7 @@ const project = z.object({
   description: z.string(),
   href: z.string().url().optional(),
   image: z.string().optional(),
+  imageClassName: z.string(), // Added property here
   tags: z.array(z.string()),
   links: z.array(iconLink),
 });

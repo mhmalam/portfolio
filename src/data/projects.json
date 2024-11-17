@@ -4,8 +4,9 @@
       "name": "Guess The Number",
       "description": "As a Freelance Discord Bot Developer, I created and maintained countless bots. The most memorable one, the 'Guess The Number' bot, became my largest and most successful project. It reached over 12,000,000 users across 13,000 servers, showcasing its popularity and reliability. This bot enabled users to engage in guessing games within their Discord servers, handling thousands of game instances simultaneously. Utilizing MongoDB for data storage and Redis caching for optimization, the bot efficiently managed and sorted through a massive volume of messages.",
       "image": "/gtn.webp",
-      "tags": ["MongoDB", "Redis", "Node.js", "Discord API", "Caching"],
-      "links": []
+      "tags": ["MongoDB", "Redis", "Node.js"],
+      "links": [],
+      "imageClassName": "h-40 w-full object-top"
     },
     {
       "name": "Blogify",
@@ -23,33 +24,55 @@
           "href": "https://youtu.be/4vF6VUuJSwk",
           "icon": "youtube"
         }
-      ]
+      ],
+      "imageClassName": "h-40 w-full object-top"
     },
     {
       "name": "Discord Metric System",
       "description": "Developed an advanced real-time metric collection and visualization system utilizing Discord's API and the MERN stack. This project involved collecting, processing, and visualizing metrics data efficiently from Discord servers, featuring a streamlined caching pipeline and high-performance APIs for seamless updates and data visualization.",
       "image": "/metrics.webp",
-      "tags": ["MERN Stack", "Redis", "MongoDB", "Express.js", "ReactJS", "Discord API"],
+      "tags": ["Redis", "MongoDB", "Express.js", "ReactJS", "Docker"],
       "links": [
         {
           "name": "Source",
           "href": "https://github.com/Yincard/ChatFlow",
           "icon": "github"
         }
-      ]
+      ],
+      "imageClassName": "h-40 w-full object-top"
     },
     {
       "name": "Whack-A-Mole",
       "description": "Created the software for a Whack-A-Mole game combining real-time interaction with hardware and an engaging UI. This project showcased hardware integration and full-stack development skills, featuring a dynamic game interface synchronized with physical sensors and motors, real-time WebSocket communication, and a responsive React.js-based UI.",
       "image": "/whackamole.png",
-      "tags": ["Node.js", "React.js", "WebSocket", "Arduino", "Hardware Integration", "Express.js"],
+      "tags": ["Node.js", "React.js", "Socket.IO", "Express.js"],
       "links": [
         {
           "name": "Source",
           "href": "https://github.com/Yincard/Whack-A-Mole",
           "icon": "github"
         }
-      ]
+      ],
+      "imageClassName": "h-40 w-full object-cover object-top"
+    },
+    {
+      "name": "Inventory Management",
+      "description": "A robust inventory management system designed to simplify tracking and management of products and stock levels. This project features a sleek user interface, efficient backend logic, and real-time synchronization of inventory data for improved productivity.",
+      "image": "/inventory.png",
+      "tags": ["React.js", "Firebase", "Next.js"],
+      "links": [
+        {
+          "name": "Live Demo",
+          "href": "https://inventory-management-kjnctuglo-yincards-projects.vercel.app/",
+          "icon": "external-link"
+        },
+        {
+          "name": "Source",
+          "href": "https://github.com/Yincard/inventory-management",
+          "icon": "github"
+        }
+      ],
+      "imageClassName": "h-40 w-full object-fill"
     }
   ]
 }
