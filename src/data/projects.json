@@ -4,14 +4,14 @@
       "name": "Guess The Number",
       "description": "As a Freelance Discord Bot Developer, I created and maintained countless bots. The most memorable one, the 'Guess The Number' bot, became my largest and most successful project. It reached over 12,000,000 users across 13,000 servers, showcasing its popularity and reliability. This bot enabled users to engage in guessing games within their Discord servers, handling thousands of game instances simultaneously. Utilizing MongoDB for data storage and Redis caching for optimization, the bot efficiently managed and sorted through a massive volume of messages.",
       "image": "/gtn.webp",
-      "tags": ["MongoDB", "Redis", "Node.js"],
+      "tags": ["MongoDB", "Redis", "Node.js", "Discord API", "Caching"],
       "links": [],
-      "imageClassName": "h-40 w-full object-top"
+      "imageClassName": "h-40 w-full object-fill"
     },
     {
       "name": "Blogify",
       "description": "Blogify is a modern and intuitive blogging platform designed to empower users to create, share, and manage blog content effortlessly. Developed during a hackathon, it offers a seamless user experience with features focused on customization, accessibility, and community engagement.",
-      "image": "/blogify.png",
+      "image": "/testinblogify.png",
       "tags": ["React.js", "Next.js", "Node.js", "Firebase", "MySQL", "Prisma"],
       "links": [
         {
@@ -25,7 +25,7 @@
           "icon": "youtube"
         }
       ],
-      "imageClassName": "h-40 w-full object-top"
+      "imageClassName": "h-40 w-full object-contain"
     },
     {
       "name": "Discord Metric System",
