@@ -7,8 +7,8 @@
       "logo": "/freelancing.png",
       "start": "September 2019",
       "description": [
-        "Gonna finish this later",
-        "Gonna finish this later"
+        "Developed and implemented custom scalable web applications and bots for Discord and Twitch.",
+        "Scaled back-end infrastructure to efficiently process and manage millions of daily messages, supporting a user base of over 12,000,000 across 13,000+ unique communities, tailored to 100+ clients."
       ]
     },
     {
@@ -16,11 +16,11 @@
       "href": "https://www.linkedin.com/company/headstarterai/",
       "title": "Software Engineering Fellow",
       "logo": "/headstarter.jpg",
-      "start": "August 2024",
+      "start": "July 2024",
       "end": "September 2024",
       "description": [
-        "Gonna finish this later",
-        "Gonna finish this later"
+        "Built 5+ AI apps and APIs using Next.js, OpenAI, Pinecone, and Stripe, mentored by FAANG engineers.",
+        "Won a hackathon hosted by a TikTok hiring manager for a TikTok clone, earning a referral for internship opportunities."
       ],
       "links": [
         {
@@ -31,16 +31,16 @@
       ]
     },
     {
-      "name": "Bronx Center for Scence and Mathematics",
+      "name": "Bronx Center for Science and Mathematics",
       "href": "https://www.linkedin.com/school/bronx-center-for-science-and-mathematics/posts/?feedView=all",
-      "title": "Robotics Engineering Mentor",
+      "title": "Engineering Mentor",
       "logo": "/bcsm.jpg",
       "start": "September 2023",
       "end": "June 2024",
       "description": [
-        "Gonna finish this later",
-        "Gonna finish this later"
-            ]
+        "Guided the FTC Robotics team in advanced Java and technical documentation, enhancing understanding of software architecture.",
+        "Instructed on object-oriented programming, fostering the development of complex algorithms for robotics."
+      ]
     }
   ]
 }

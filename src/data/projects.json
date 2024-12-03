@@ -26,7 +26,7 @@
         }
       ],
       "imageClassName": "h-40 w-full object-contain"
-    },
+    },   
     {
       "name": "Discord Metric System",
       "description": "Developed an advanced real-time metric collection and visualization system utilizing Discord's API and the MERN stack. This project involved collecting, processing, and visualizing metrics data efficiently from Discord servers, featuring a streamlined caching pipeline and high-performance APIs for seamless updates and data visualization.",
@@ -55,6 +55,20 @@
       ],
       "imageClassName": "h-40 w-full object-cover object-top"
     },
+    {
+      "name": "SaaS Template",
+      "description": "Next.js Landing Template is a sleek and modern landing page designed to showcase your SaaS product or service. Developed with performance and flexibility in mind, this template features a clean, responsive design with customizable sections for highlighting key features, testimonials, and call-to-action buttons. Ideal for startups and businesses looking to create a professional online presence quickly.",
+      "image": "/template.png",
+      "tags": ["Next.js", "React.js", "Tailwind CSS", "Vercel", "Responsive Design"],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/Yincard/nextjs-landing-template",
+          "icon": "github"
+        }
+      ],
+      "imageClassName": "h-40 w-full object-contain"
+    },    
     {
       "name": "Inventory Management",
       "description": "A robust inventory management system designed to simplify tracking and management of products and stock levels. This project features a sleek user interface, efficient backend logic, and real-time synchronization of inventory data for improved productivity.",
