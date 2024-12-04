@@ -2,16 +2,35 @@
   "projects": [
     {
       "name": "Guess The Number",
-      "description": "As a Freelance Discord Bot Developer, I created and maintained countless bots. The most memorable one, the 'Guess The Number' bot, became my largest and most successful project. It reached over 12,000,000 users across 13,000 servers, showcasing its popularity and reliability. This bot enabled users to engage in guessing games within their Discord servers, handling thousands of game instances simultaneously. Utilizing MongoDB for data storage and Redis caching for optimization, the bot efficiently managed and sorted through a massive volume of messages.",
-      "image": "/gtn.webp",
-      "tags": ["MongoDB", "Redis", "Node.js", "Discord API", "Caching"],
+      "description": "An easy-to-use Discord bot for playing a number guessing game, reaching over 12 million users across 13,000 servers.",
+      "image": "/gtn.png",
+      "tags": ["MongoDB", "Redis", "Node.js"],
       "links": [],
       "imageClassName": "h-40 w-full object-fill"
     },
     {
+      "name": "SaaS Template",
+      "description": "A sleek, modern Next.js landing page template for showcasing SaaS products or services with customizable sections and a responsive design.",
+      "image": "/template.png",
+      "tags": ["Next.js", "React.js", "Tailwind CSS","Firebase"],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/Yincard/nextjs-landing-template",
+          "icon": "github"
+        },
+        {
+          "name": "Live Demo",
+          "href": "https://nextjs-landing-template-one.vercel.app/",
+          "icon": "external-link"
+        }
+      ],
+      "imageClassName": "h-40 w-full object-contain"
+    },
+    {
       "name": "Blogify",
-      "description": "Blogify is a modern and intuitive blogging platform designed to empower users to create, share, and manage blog content effortlessly. Developed during a hackathon, it offers a seamless user experience with features focused on customization, accessibility, and community engagement.",
-      "image": "/testinblogify.png",
+      "description": "A modern and intuitive blogging platform that allows users to easily create, share, and manage their blog content, with features focused on customization, accessibility, and community engagement.",
+      "image": "/blogify.png",
       "tags": ["React.js", "Next.js", "Node.js", "Firebase", "MySQL", "Prisma"],
       "links": [
         {
@@ -20,18 +39,18 @@
           "icon": "github"
         },
         {
-          "name": "Hackathon Presentation",
+          "name": "Hackathon Vid",
           "href": "https://youtu.be/4vF6VUuJSwk",
           "icon": "youtube"
         }
       ],
       "imageClassName": "h-40 w-full object-contain"
-    },   
+    },
     {
       "name": "Discord Metric System",
-      "description": "Developed an advanced real-time metric collection and visualization system utilizing Discord's API and the MERN stack. This project involved collecting, processing, and visualizing metrics data efficiently from Discord servers, featuring a streamlined caching pipeline and high-performance APIs for seamless updates and data visualization.",
+      "description": "A real-time metric collection and visualization system built with the MERN stack to process and visualize Discord server data with high performance.",
       "image": "/metrics.webp",
-      "tags": ["Redis", "MongoDB", "Express.js", "ReactJS", "Docker"],
+      "tags": ["Redis", "MongoDB", "Express.js", "ReactJS"],
       "links": [
         {
           "name": "Source",
@@ -42,8 +61,16 @@
       "imageClassName": "h-40 w-full object-top"
     },
     {
+      "name": "Ranked Bedwars",
+      "description": "A matchmaking Discord bot competitive Bedwars games.",
+      "image": "/rbw.jpg",
+      "tags": ["MongoDB", "Node.js"],
+      "links": [],
+      "imageClassName": "h-40 w-full object-top"
+    },
+    {
       "name": "Whack-A-Mole",
-      "description": "Created the software for a Whack-A-Mole game combining real-time interaction with hardware and an engaging UI. This project showcased hardware integration and full-stack development skills, featuring a dynamic game interface synchronized with physical sensors and motors, real-time WebSocket communication, and a responsive React.js-based UI.",
+      "description": "A real-time interactive Whack-A-Mole game that integrates hardware with a dynamic React.js interface using WebSocket communication and physical sensors.",
       "image": "/whackamole.png",
       "tags": ["Node.js", "React.js", "Socket.IO", "Express.js"],
       "links": [
@@ -51,39 +78,30 @@
           "name": "Source",
           "href": "https://github.com/Yincard/Whack-A-Mole",
           "icon": "github"
+        },
+        {
+          "name": "Live Demo",
+          "href": "https://whack-a-mole-plum-phi.vercel.app/",
+          "icon": "external-link"
         }
       ],
       "imageClassName": "h-40 w-full object-cover object-top"
     },
     {
-      "name": "SaaS Template",
-      "description": "Next.js Landing Template is a sleek and modern landing page designed to showcase your SaaS product or service. Developed with performance and flexibility in mind, this template features a clean, responsive design with customizable sections for highlighting key features, testimonials, and call-to-action buttons. Ideal for startups and businesses looking to create a professional online presence quickly.",
-      "image": "/template.png",
-      "tags": ["Next.js", "React.js", "Tailwind CSS", "Vercel", "Responsive Design"],
-      "links": [
-        {
-          "name": "Source",
-          "href": "https://github.com/Yincard/nextjs-landing-template",
-          "icon": "github"
-        }
-      ],
-      "imageClassName": "h-40 w-full object-contain"
-    },    
-    {
-      "name": "Inventory Management",
-      "description": "A robust inventory management system designed to simplify tracking and management of products and stock levels. This project features a sleek user interface, efficient backend logic, and real-time synchronization of inventory data for improved productivity.",
+      "name": "Inventory Tracking",
+      "description": "A full-featured inventory management system that enables real-time tracking and management of stock levels with a sleek UI and efficient backend.",
       "image": "/inventory.png",
       "tags": ["React.js", "Firebase", "Next.js"],
       "links": [
         {
-          "name": "Live Demo",
-          "href": "https://inventory-management-kjnctuglo-yincards-projects.vercel.app/",
-          "icon": "external-link"
-        },
-        {
           "name": "Source",
           "href": "https://github.com/Yincard/inventory-management",
           "icon": "github"
+        },
+        {
+          "name": "Live Demo",
+          "href": "https://inventory-management-kjnctuglo-yincards-projects.vercel.app/",
+          "icon": "external-link"
         }
       ],
       "imageClassName": "h-40 w-full object-fill"

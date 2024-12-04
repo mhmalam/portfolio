@@ -1,6 +1,7 @@
 import Experience from "@/components/Experience";
 import LinkWithIcon from "@/components/LinkWithIcon";
 import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
 import Socials from "@/components/Socials";
 import { Button } from "@/components/ui/Button";
 import {
@@ -54,9 +55,9 @@ export default async function Home() {
           />
         </div>
         <Projects limit={2} />
-      </section>
+        </section>
 
-
-    </article>
+        <Skills />
+      </article>
   );
 }

@@ -1,0 +1,65 @@
+{
+	"skills": [
+	  {
+		"name": "React",
+		"icon": "react",
+		"category": "Frontend"
+	  },
+	  {
+		"name": "Next.js",
+		"icon": "nextjs",
+		"category": "Frontend"
+	  },
+	  {
+		"name": "JavaScript",
+		"icon": "javascript",
+		"category": "Frontend"
+	  },
+	  {
+		"name": "TypeScript",
+		"icon": "typescript",
+		"category": "Frontend"
+	  },
+	  {
+		"name": "Node.js",
+		"icon": "nodejs",
+		"category": "Backend"
+	  },
+	  {
+		"name": "MongoDB",
+		"icon": "mongodb",
+		"category": "Backend"
+	  },
+	  {
+		"name": "Redis",
+		"icon": "redis",
+		"category": "Backend"
+	  },
+	  {
+		"name": "TailwindCSS",
+		"icon": "tailwindcss",
+		"category": "Frontend"
+	  },
+	  {
+		"name": "Python",
+		"icon": "python",
+		"category": "Backend"
+	  },
+	  {
+		"name": "AWS",
+		"icon": "aws",
+		"category": "Cloud"
+	  },
+	  {
+		"name": "Docker",
+		"icon": "docker",
+		"category": "Cloud"
+	  },
+	  {
+		"name": "Git",
+		"icon": "git",
+		"category": "Version Control"
+	  }
+	]
+  }
+  
