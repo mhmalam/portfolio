@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Calistoga, Inter } from "next/font/google";
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const calistoga = Calistoga({
@@ -37,7 +38,8 @@ export default function RootLayout({
       >
         <Providers>
           <Header />
-          <main className="grow">{children}</main>
+          <main className="grow">{children} <Analytics />
+          </main>
           <Footer />
         </Providers>
       </body>
