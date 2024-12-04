@@ -38,11 +38,11 @@ export function ProjectCard({ project }: Props) {
         <div className="flex flex-1 flex-col space-y-4">
           <div className="space-y-2">
             <CardTitle className="flex items-center justify-between">
-              <Link href={href || "#"} target="_blank" className="hover:text-primary">
-                <h3 className="text-lg font-bold text-white truncate max-w-full">
+                <Link href={href || "#"} target="_blank" className="hover:text-primary">
+                <h3 className="text-lg font-bold text-foreground truncate max-w-full">
                   {name}
-                </h3> {/* Keep title in white */}
-              </Link>
+                </h3>
+                </Link>
               {links && links.length > 0 && (
                 <div className="flex gap-1.5">
                   {links.toSorted().map((link, idx) => (
