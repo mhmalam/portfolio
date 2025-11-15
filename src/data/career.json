@@ -1,14 +1,13 @@
 {
   "career": [
     {
-      "name": "Freelancing",
-      "href": "",
-      "title": "Software Engineer",
-      "logo": "/freelancing.png",
-      "start": "September 2019",
+      "name": "Columbia Housing",
+      "href": "https://housing.columbia.edu/",
+      "title": "Systems & Operations Assistant",
+      "logo": "/columbia.jpg",
+      "start": "May 2024",
       "description": [
-        "Developed and implemented custom scalable web applications and bots for Discord and Twitch.",
-        "Scaled back-end infrastructure to efficiently process and manage millions of daily messages, supporting a user base of over 12,000,000 across 13,000+ unique communities, tailored to 100+ clients."
+        "Leading development of Dorm Room Viewer, a web platform for 9,000+ Columbia students to preview residence halls, and built Node.js automation scripts to reduce manual operations by 80%."
       ]
     },
     {
@@ -19,8 +18,7 @@
       "start": "July 2024",
       "end": "September 2024",
       "description": [
-        "Built 5+ AI apps and APIs using Next.js, OpenAI, Pinecone, and Stripe, mentored by FAANG engineers.",
-        "Won a hackathon hosted by a TikTok hiring manager for a TikTok clone, earning a referral for internship opportunities."
+        "Shipped 5 production-ready AI apps and APIs using Next.js, OpenAI API, Pinecone, and Stripe. Won 1st place at TikTok Hackathon among 75+ participants."
       ],
       "links": [
         {
@@ -31,15 +29,14 @@
       ]
     },
     {
-      "name": "Bronx Center for Science and Mathematics",
-      "href": "https://www.linkedin.com/school/bronx-center-for-science-and-mathematics/posts/?feedView=all",
-      "title": "Engineering Mentor",
-      "logo": "/bcsm.jpg",
-      "start": "September 2023",
-      "end": "June 2024",
+      "name": "Freelance",
+      "href": "",
+      "title": "Software Engineer",
+      "logo": "/freelance.svg",
+      "start": "September 2019",
+      "end": "May 2024",
       "description": [
-        "Guided the FTC Robotics team in advanced Java and technical documentation, enhancing understanding of software architecture.",
-        "Instructed on object-oriented programming, fostering the development of complex algorithms for robotics."
+        "Delivered scalable web applications and Discord bots to 500+ clients, leveraging React.js, MongoDB, and Redis for efficient data management."
       ]
     }
   ]

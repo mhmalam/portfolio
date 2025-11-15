@@ -1,6 +1,33 @@
 {
   "projects": [
     {
+      "name": "Dorm Room Viewer",
+      "description": "A web platform for Columbia students to preview residence halls with real-time content management.",
+      "image": "/dormviewer.png",
+      "tags": ["React.js", "Next.js", "AWS S3", "NextAuth.js"],
+      "links": [],
+      "imageClassName": "h-40 w-full object-cover"
+    },
+    {
+      "name": "Dine U",
+      "description": "A smart dining companion app for university students that combines real-time dining hall information with social features to enhance the campus dining experience.",
+      "image": "/dineu.png",
+      "tags": ["React Native", "TypeScript", "Python", "Node.js", "Supabase"],
+      "links": [
+        {
+          "name": "Live Demo",
+          "href": "https://www.youtube.com/watch?v=AfYKsCUvVpM",
+          "icon": "youtube"
+        },
+        {
+          "name": "Source",
+          "href": "https://github.com/mkforde/DineU",
+          "icon": "github"
+        }
+      ],
+      "imageClassName": "h-40 w-full object-cover"
+    },
+    {
       "name": "Guess The Number",
       "description": "An easy-to-use Discord bot for playing a number guessing game, reaching over 12 million users across 13,000 servers.",
       "image": "/gtn.png",
@@ -12,7 +39,7 @@
       "name": "SaaS Template",
       "description": "A sleek, modern Next.js landing page template for showcasing SaaS products or services with customizable sections and a responsive design.",
       "image": "/template.png",
-      "tags": ["Next.js", "React.js", "Tailwind CSS","Firebase"],
+      "tags": ["Next.js", "React.js", "Tailwind CSS", "Firebase"],
       "links": [
         {
           "name": "Source",
@@ -61,14 +88,6 @@
       "imageClassName": "h-40 w-full object-top"
     },
     {
-      "name": "Ranked Bedwars",
-      "description": "A matchmaking Discord bot competitive Bedwars games.",
-      "image": "/rbw.jpg",
-      "tags": ["MongoDB", "Node.js"],
-      "links": [],
-      "imageClassName": "h-40 w-full object-top"
-    },
-    {
       "name": "Whack-A-Mole",
       "description": "A real-time interactive Whack-A-Mole game that integrates hardware with a dynamic React.js interface using WebSocket communication and physical sensors.",
       "image": "/whackamole.png",
@@ -81,8 +100,8 @@
         },
         {
           "name": "Live Demo",
-          "href": "https://whack-a-mole-plum-phi.vercel.app/",
-          "icon": "external-link"
+          "href": "https://youtu.be/c9yB0W9OVdE",
+          "icon": "youtube"
         }
       ],
       "imageClassName": "h-40 w-full object-cover object-top"

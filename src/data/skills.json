@@ -1,6 +1,26 @@
 {
 	"skills": [
 	  {
+		"name": "JavaScript",
+		"icon": "javascript",
+		"category": "Languages"
+	  },
+	  {
+		"name": "TypeScript",
+		"icon": "typescript",
+		"category": "Languages"
+	  },
+	  {
+		"name": "Python",
+		"icon": "python",
+		"category": "Languages"
+	  },
+	  {
+		"name": "Java",
+		"icon": "java",
+		"category": "Languages"
+	  },
+	  {
 		"name": "React",
 		"icon": "react",
 		"category": "Frontend"
@@ -11,18 +31,18 @@
 		"category": "Frontend"
 	  },
 	  {
-		"name": "JavaScript",
-		"icon": "javascript",
-		"category": "Frontend"
-	  },
-	  {
-		"name": "TypeScript",
-		"icon": "typescript",
-		"category": "Frontend"
-	  },
-	  {
 		"name": "Node.js",
 		"icon": "nodejs",
+		"category": "Backend"
+	  },
+	  {
+		"name": "Express",
+		"icon": "express",
+		"category": "Backend"
+	  },
+	  {
+		"name": "PostgreSQL",
+		"icon": "postgresql",
 		"category": "Backend"
 	  },
 	  {
@@ -36,13 +56,8 @@
 		"category": "Backend"
 	  },
 	  {
-		"name": "TailwindCSS",
-		"icon": "tailwindcss",
-		"category": "Frontend"
-	  },
-	  {
-		"name": "Python",
-		"icon": "python",
+		"name": "SQL",
+		"icon": "sql",
 		"category": "Backend"
 	  },
 	  {
@@ -56,9 +71,14 @@
 		"category": "Cloud"
 	  },
 	  {
+		"name": "Kubernetes",
+		"icon": "kubernetes",
+		"category": "Cloud"
+	  },
+	  {
 		"name": "Git",
 		"icon": "git",
-		"category": "Version Control"
+		"category": "Tools"
 	  }
 	]
   }

@@ -5,59 +5,62 @@ import Skills from "@/components/Skills";
 import Socials from "@/components/Socials";
 import { Button } from "@/components/ui/Button";
 import {
-  ArrowDownRight,
   ArrowRightIcon,
-  FileDown
+  FileText
 } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default async function Home() {
 
   return (
-    <article className="mt-8 flex flex-col gap-16 pb-16">
-      <section className="flex flex-col items-start gap-8 md:flex-row-reverse md:items-center md:justify-between">
-        <Image
-          className="rounded-lg"
-          src="/alam.jpg"
-          alt="Photo of Me"
-          width={175}
-          height={175}
-          priority
-        />
+    <article className="flex flex-col gap-20 pb-16">
+      {/* Hero Section */}
+      <section className="relative pt-12 pb-8">
         <div className="flex flex-col">
-          <h1 className="title text-5xl">Mohammed Alam</h1>
-          <div className="mt-4 flex items-end gap-1">
-            <p className="font-semibold">Software Engineer & Student</p>
-          </div>
-          <section className="mt-8 flex items-center gap-8">
+          <h1 className="title text-5xl sm:text-6xl mb-5">
+            Mohammed Alam
+          </h1>
+          <p className="text-xl sm:text-2xl font-semibold mb-8">
+            Software Engineer | CS @  <span className="text-foreground whitespace-nowrap">Columbia University</span>
+          </p>
+          
+          {/* CTA Buttons */}
+          <div className="flex items-center gap-4">
             <Link href="/resume.pdf" target="_blank">
-              <Button variant="outline">
-                <span className="font-semibold">Resume</span>
-                <FileDown className="ml-2 size-5" />
+              <Button className="shadow-lg hover:shadow-xl transition-shadow">
+                <span className="font-semibold">View Resume</span>
+                <FileText className="ml-2 size-4" />
               </Button>
             </Link>
             <Socials />
-          </section>
+          </div>
         </div>
       </section>
 
-      <Experience />
+      {/* Experience Section */}
+      <section className="scroll-mt-20">
+        <Experience />
+      </section>
 
-      <section className="flex flex-col gap-8">
-        <div className="flex justify-between">
-          <h2 className="title text-2xl sm:text-3xl">featured projects</h2>
+      {/* Projects Section */}
+      <section className="scroll-mt-20">
+        <div className="flex sm:items-end sm:justify-between gap-4 mb-10">
+          <h2 className="title text-3xl sm:text-4xl">Featured Projects</h2>
           <LinkWithIcon
             href="/projects"
             position="right"
             icon={<ArrowRightIcon className="size-5" />}
-            text="view more"
+            text="View All Projects"
           />
         </div>
         <Projects limit={2} />
-        </section>
+      </section>
 
+      {/* Skills Section */}
+      <section className="scroll-mt-20">
+        <h2 className="title text-3xl sm:text-4xl mb-10">My Stack</h2>
         <Skills />
-      </article>
+      </section>
+    </article>
   );
 }

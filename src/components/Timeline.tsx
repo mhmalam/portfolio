@@ -8,9 +8,9 @@ interface Props {
 
 export default function Timeline({ experience }: Props) {
   return (
-    <Card>
-      <CardContent className="p-0">
-        <ul className="ml-10 border-l">
+    <Card className="border border-border/50 bg-card/30">
+      <CardContent className="p-8">
+        <ul>
           {experience.map((exp, id) => (
             <TimelineItem key={id} experience={exp} />
           ))}

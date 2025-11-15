@@ -13,53 +13,58 @@ export default function TimelineItem({ experience }: Props) {
     experience;
 
   return (
-    <li className="relative ml-10 py-4">
-      <Link
-        href={href}
-        target="_blank"
-        className="absolute -left-16 top-4 flex items-center justify-center rounded-full bg-white"
-      >
-        <Avatar className="size-12 border">
-          <AvatarImage
-            src={logo}
-            alt={name}
-            className="bg-background object-contain"
-          />
-          <AvatarFallback>{name[0]}</AvatarFallback>
-        </Avatar>
-      </Link>
-      <div className="flex flex-1 flex-col justify-start gap-1">
+    <li className="relative flex gap-6 pb-10 last:pb-0">
+      {/* Left side - Logo and line */}
+      <div className="relative flex flex-col items-center flex-shrink-0">
+        <Link
+          href={href}
+          target="_blank"
+          className="relative z-10 flex items-center justify-center rounded-full transition-transform duration-200 hover:scale-110"
+        >
+          <Avatar className="size-14 border-2 shadow-sm bg-white dark:bg-white/10">
+            <AvatarImage
+              src={logo}
+              alt={name}
+              className="object-contain p-2"
+            />
+            <AvatarFallback>{name[0]}</AvatarFallback>
+          </Avatar>
+        </Link>
+        {/* Vertical line */}
+        <div className="absolute top-14 bottom-0 w-[2px] bg-border"></div>
+      </div>
+      
+      {/* Right side - Content */}
+      <div className="flex-1 pt-1">
+        <h2 className="text-base font-normal text-muted-foreground mb-1.5">{name}</h2>
+        <h3 className="text-xl font-bold text-foreground mb-2">{title}</h3>
         {start && (
-          <time className="text-xs text-muted-foreground">
-            <span>{start}</span>
-            <span>{" - "}</span>
-            <span>{end ? end : "Present"}</span>
+          <time className="text-sm text-muted-foreground block mb-4">
+            {start} - {end ? end : "Present"}
           </time>
         )}
-        <h2 className="font-semibold leading-none">{name}</h2>
-        {title && <p className="text-sm text-muted-foreground">{title}</p>}
         {description && (
-          <ul className="ml-4 list-outside list-disc">
+          <div className="space-y-3">
             {description.map((desc, i) => (
-              <li key={i} className="prose pr-8 text-sm dark:prose-invert">
+              <p key={i} className="text-sm leading-relaxed text-foreground/90">
                 {desc}
-              </li>
+              </p>
             ))}
-          </ul>
+          </div>
+        )}
+        {links && links.length > 0 && (
+          <div className="mt-4 flex flex-row flex-wrap items-start gap-2">
+            {links?.map((link, idx) => (
+              <Link href={link.href} key={idx}>
+                <Badge title={link.name} className="flex gap-1.5 transition-all hover:scale-105">
+                  <Icon name={link.icon} aria-hidden="true" className="size-3" />
+                  {link.name}
+                </Badge>
+              </Link>
+            ))}
+          </div>
         )}
       </div>
-      {links && links.length > 0 && (
-        <div className="mt-2 flex flex-row flex-wrap items-start gap-2">
-          {links?.map((link, idx) => (
-            <Link href={link.href} key={idx}>
-              <Badge key={idx} title={link.name} className="flex gap-2">
-                <Icon name={link.icon} aria-hidden="true" className="size-3" />
-                {link.name}
-              </Badge>
-            </Link>
-          ))}
-        </div>
-      )}
     </li>
   );
 }
