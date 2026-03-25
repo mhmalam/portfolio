@@ -1,6 +1,20 @@
 {
   "projects": [
     {
+      "name": "Frosted Studios",
+      "description": "Studio website for a top Roblox game studio with 1.6B+ total visits. Features live game stats pulled from the Roblox Open Cloud API (CCU, visit counts), a contact system with email delivery, and a showcase of the studio's game portfolio.",
+      "image": "/frosted.png",
+      "tags": ["Next.js", "React.js", "Roblox API", "Resend", "Tailwind CSS"],
+      "links": [
+        {
+          "name": "Live Site",
+          "href": "https://frostedstudios.gg/",
+          "icon": "external-link"
+        }
+      ],
+      "imageClassName": "h-40 w-full object-cover object-top"
+    },
+    {
       "name": "Dorm Room Viewer",
       "description": "A web platform for Columbia students to preview residence halls with real-time content management.",
       "image": "/dormviewer.png",
