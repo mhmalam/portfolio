@@ -23,7 +23,7 @@ export default async function Home() {
             <h1 className="title text-5xl sm:text-6xl mb-5">
               Mohammed Alam
             </h1>
-            <p className="text-xl sm:text-2xl font-semibold mb-4">
+            <p className="mb-4 text-lg font-semibold sm:whitespace-nowrap sm:text-xl">
               Software Engineer | CS @ <span className="text-foreground whitespace-nowrap">Columbia University</span>
             </p>
             <p className="mb-8 flex items-center gap-1.5 text-sm text-muted-foreground">
