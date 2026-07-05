@@ -23,11 +23,17 @@
       "imageClassName": "h-40 w-full object-cover object-top"
     },
     {
-      "name": "Dorm Room Viewer",
-      "description": "Web platform for 9,000+ Columbia students to preview residence halls. AWS S3-backed image delivery, NextAuth.js role-based access for verified Columbia accounts, and a real-time admin panel for Housing staff to manage content.",
+      "name": "CU Room — Columbia Housing Explorer",
+      "description": "Housing explorer for 9,000+ Columbia students: building photos, room-by-room floor plans with sizes, walk times to campus, and filters by room type, size, and distance. S3-backed image pipeline with graceful fallbacks and a Columbia CAS (SSO) auth scaffold — currently in public beta with guest browsing.",
       "image": "/dormviewer.png",
-      "tags": ["React.js", "Next.js", "AWS S3", "NextAuth.js"],
-      "links": [],
+      "tags": ["React 19", "Vite", "Tailwind CSS", "Framer Motion", "AWS S3"],
+      "links": [
+        {
+          "name": "Live Site",
+          "href": "https://curoom.vercel.app/",
+          "icon": "external-link"
+        }
+      ],
       "imageClassName": "h-40 w-full object-cover"
     },
     {
