@@ -14,7 +14,16 @@ export function ProjectCard({ project }: Props) {
   return (
     <div className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
       {/* Image */}
-      <div className="relative aspect-[2/1] w-full">
+      <div className="relative aspect-[2/1] w-full overflow-hidden">
+        {image && imageClassName?.includes("object-contain") && (
+          <Image
+            src={image}
+            alt=""
+            aria-hidden="true"
+            fill
+            className="scale-110 object-cover opacity-50 blur-2xl"
+          />
+        )}
         {image && (
           <Image
             src={image}

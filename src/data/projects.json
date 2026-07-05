@@ -6,7 +6,7 @@
       "image": "/gtn.png",
       "tags": ["Node.js", "MongoDB", "Redis", "Bull.js"],
       "links": [],
-      "imageClassName": "h-40 w-full object-fill"
+      "imageClassName": "object-contain p-10"
     },
     {
       "name": "Frosted Studios",
@@ -66,7 +66,7 @@
           "icon": "youtube"
         }
       ],
-      "imageClassName": "h-40 w-full object-contain"
+      "imageClassName": "object-contain p-6"
     },
     {
       "name": "SaaS Template",
@@ -85,7 +85,7 @@
           "icon": "external-link"
         }
       ],
-      "imageClassName": "h-40 w-full object-contain"
+      "imageClassName": "object-contain p-6"
     },
     {
       "name": "Discord Metric System",

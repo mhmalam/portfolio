@@ -3,15 +3,15 @@ import Header from "@/components/Header";
 import Providers from "@/components/Providers";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Calistoga, Inter } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-const calistoga = Calistoga({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-serif",
-  weight: ["400"],
+  weight: ["500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -52,7 +52,7 @@ export default function RootLayout({
         className={cn(
           "mx-auto flex min-h-screen max-w-3xl flex-col px-8 font-sans antialiased",
           inter.variable,
-          calistoga.variable,
+          spaceGrotesk.variable,
         )}
       >
         <Providers>
