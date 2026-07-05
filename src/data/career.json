@@ -7,7 +7,8 @@
       "logo": "/columbia.jpg",
       "start": "May 2024",
       "description": [
-        "Leading development of Dorm Room Viewer, a web platform for 9,000+ Columbia students to preview residence halls."
+        "Leading development of Dorm Room Viewer, a web platform for 9,000+ Columbia students to preview residence halls, serving images from AWS S3 through a protected REST API.",
+        "Built Node.js automation services that aggregate and synchronize Housing data across systems, eliminating manual data entry and reducing administrative errors."
       ]
     },
     {
@@ -18,7 +19,8 @@
       "start": "July 2024",
       "end": "September 2024",
       "description": [
-        "Shipped 5 production-ready AI apps and APIs using Next.js, OpenAI API, Pinecone, and Stripe. Won 1st place at TikTok Hackathon among 75+ participants."
+        "Shipped 5 production-ready AI applications in weekly sprints using Next.js, TypeScript, OpenAI, Pinecone, and Stripe.",
+        "Won 1st place among 75+ participants at a TikTok-sponsored hackathon with a real-time blogging platform featuring infinite scroll and live updates."
       ],
       "links": [
         {
@@ -36,7 +38,8 @@
       "start": "September 2019",
       "end": "May 2024",
       "description": [
-        "Delivered scalable web applications and Discord bots to 500+ clients, leveraging React.js, MongoDB, and Redis for efficient data management."
+        "Designed and delivered 500+ custom websites and applications for clients using React.js, Node.js, and MongoDB.",
+        "Built and scaled Discord bots — growing one to 13,000,000 users across 13,000+ servers — with Redis caching and queue-based architecture for low-latency performance."
       ]
     }
   ]

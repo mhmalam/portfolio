@@ -47,7 +47,7 @@ export function ProjectCard({ project }: Props) {
               </Link>
               {links && links.length > 0 && (
                 <div className="flex flex-wrap gap-1.5">
-                  {links.toSorted().map((link, idx) => (
+                  {links.map((link, idx) => (
                     <Link href={link?.href} key={idx} target="_blank">
                       <Badge
                         className="flex items-center gap-1.5 px-2.5 py-1 text-[10px] transition-all hover:bg-primary/90 hover:scale-105"
@@ -71,7 +71,7 @@ export function ProjectCard({ project }: Props) {
           <div className="mt-auto pt-2">
             {tags && tags.length > 0 && (
               <div className="flex flex-wrap gap-2">
-                {tags.toSorted().map((tag) => (
+                {tags.map((tag) => (
                   <Badge
                     key={tag}
                     variant="secondary"

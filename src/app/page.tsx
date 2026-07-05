@@ -6,8 +6,10 @@ import Socials from "@/components/Socials";
 import { Button } from "@/components/ui/Button";
 import {
   ArrowRightIcon,
-  FileText
+  FileText,
+  MapPin
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default async function Home() {
@@ -16,24 +18,53 @@ export default async function Home() {
     <article className="flex flex-col gap-20 pb-16">
       {/* Hero Section */}
       <section className="relative pt-12 pb-8">
-        <div className="flex flex-col">
-          <h1 className="title text-5xl sm:text-6xl mb-5">
-            Mohammed Alam
-          </h1>
-          <p className="text-xl sm:text-2xl font-semibold mb-8">
-            Software Engineer | CS @  <span className="text-foreground whitespace-nowrap">Columbia University</span>
-          </p>
-          
-          {/* CTA Buttons */}
-          <div className="flex items-center gap-4">
-            <Link href="/resume.pdf" target="_blank">
-              <Button className="shadow-lg hover:shadow-xl transition-shadow">
-                <span className="font-semibold">View Resume</span>
-                <FileText className="ml-2 size-4" />
-              </Button>
-            </Link>
-            <Socials />
+        <div className="flex flex-col-reverse gap-8 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex flex-col">
+            <div className="mb-4 flex items-center gap-2 text-sm text-muted-foreground">
+              <span className="relative flex size-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex size-2 rounded-full bg-emerald-500"></span>
+              </span>
+              Open to software engineering internships &amp; new-grad roles
+            </div>
+            <h1 className="title text-5xl sm:text-6xl mb-5">
+              Mohammed Alam
+            </h1>
+            <p className="text-xl sm:text-2xl font-semibold mb-4">
+              Software Engineer | CS @ <span className="text-foreground whitespace-nowrap">Columbia University</span>
+            </p>
+            <p className="mb-2 flex items-center gap-1.5 text-sm text-muted-foreground">
+              <MapPin className="size-4" aria-hidden="true" />
+              New York, NY
+            </p>
+            <p className="mb-8 max-w-xl leading-relaxed text-muted-foreground">
+              I build software people actually use — a Discord game played by{" "}
+              <span className="font-medium text-foreground">13M+ users</span>, housing
+              tools serving{" "}
+              <span className="font-medium text-foreground">9,000+ Columbia students</span>,
+              and <span className="font-medium text-foreground">500+ projects</span>{" "}
+              shipped for freelance clients.
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="flex items-center gap-4">
+              <Link href="/resume.pdf" target="_blank">
+                <Button className="shadow-lg hover:shadow-xl transition-shadow">
+                  <span className="font-semibold">View Resume</span>
+                  <FileText className="ml-2 size-4" />
+                </Button>
+              </Link>
+              <Socials />
+            </div>
           </div>
+          <Image
+            src="/alam.jpg"
+            alt="Mohammed Alam"
+            width={175}
+            height={175}
+            priority
+            className="size-28 flex-shrink-0 rounded-full border-2 border-border object-cover shadow-md sm:size-40"
+          />
         </div>
       </section>
 
@@ -53,7 +84,7 @@ export default async function Home() {
             text="View All Projects"
           />
         </div>
-        <Projects limit={2} />
+        <Projects limit={4} />
       </section>
 
       {/* Skills Section */}

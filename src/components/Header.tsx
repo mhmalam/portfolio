@@ -9,7 +9,12 @@ const navLinks = [
   {
     name: "projects",
     href: "/projects",
-  }
+  },
+  {
+    name: "resume",
+    href: "/resume.pdf",
+    external: true,
+  },
 ];
 
 export default function Header() {
@@ -19,7 +24,13 @@ export default function Header() {
         <ul className="flex gap-4 sm:gap-8">
           {navLinks.map((nav, id) => (
             <li key={id} className="link">
-              <Link href={nav.href}>{nav.name}</Link>
+              <Link
+                href={nav.href}
+                target={nav.external ? "_blank" : undefined}
+                rel={nav.external ? "noopener noreferrer" : undefined}
+              >
+                {nav.name}
+              </Link>
             </li>
           ))}
         </ul>

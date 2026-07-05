@@ -21,8 +21,18 @@
 		"category": "Languages"
 	  },
 	  {
+		"name": "SQL",
+		"icon": "sql",
+		"category": "Languages"
+	  },
+	  {
 		"name": "React",
 		"icon": "react",
+		"category": "Frontend"
+	  },
+	  {
+		"name": "Tailwind CSS",
+		"icon": "tailwindcss",
 		"category": "Frontend"
 	  },
 	  {
@@ -53,11 +63,6 @@
 	  {
 		"name": "Redis",
 		"icon": "redis",
-		"category": "Backend"
-	  },
-	  {
-		"name": "SQL",
-		"icon": "sql",
 		"category": "Backend"
 	  },
 	  {

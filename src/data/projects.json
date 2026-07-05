@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "name": "Guess The Number",
+      "description": "Multiplayer Discord game grown organically to 13,000,000+ users across 13,000+ servers. Built on a Redis + MongoDB data layer with a Bull.js queue system to keep command latency low under high-volume concurrent traffic.",
+      "image": "/gtn.png",
+      "tags": ["Node.js", "MongoDB", "Redis", "Bull.js"],
+      "links": [],
+      "imageClassName": "h-40 w-full object-fill"
+    },
+    {
       "name": "Frosted Studios",
       "description": "Studio website for a top Roblox game studio with 1.6B+ total visits. Features live game stats pulled from the Roblox Open Cloud API (CCU, visit counts), a contact system with email delivery, and a showcase of the studio's game portfolio.",
       "image": "/frosted.png",
@@ -16,7 +24,7 @@
     },
     {
       "name": "Dorm Room Viewer",
-      "description": "A web platform for Columbia students to preview residence halls with real-time content management.",
+      "description": "Web platform for 9,000+ Columbia students to preview residence halls. AWS S3-backed image delivery, NextAuth.js role-based access for verified Columbia accounts, and a real-time admin panel for Housing staff to manage content.",
       "image": "/dormviewer.png",
       "tags": ["React.js", "Next.js", "AWS S3", "NextAuth.js"],
       "links": [],
@@ -24,7 +32,7 @@
     },
     {
       "name": "Dine U",
-      "description": "A smart dining companion app for university students that combines real-time dining hall information with social features to enhance the campus dining experience.",
+      "description": "Cross-platform dining companion app for university students with real-time dining hall menus, an ML recommendation system trained on user preferences, and serverless APIs deployed on Supabase Edge Functions.",
       "image": "/dineu.png",
       "tags": ["React Native", "TypeScript", "Python", "Node.js", "Supabase"],
       "links": [
@@ -42,12 +50,23 @@
       "imageClassName": "h-40 w-full object-cover"
     },
     {
-      "name": "Guess The Number",
-      "description": "An easy-to-use Discord bot for playing a number guessing game, reaching over 12 million users across 13,000 servers.",
-      "image": "/gtn.png",
-      "tags": ["MongoDB", "Redis", "Node.js"],
-      "links": [],
-      "imageClassName": "h-40 w-full object-fill"
+      "name": "Blogify",
+      "description": "1st place winner among 75+ participants at a TikTok-sponsored hackathon. A real-time blogging platform with infinite scroll, live updates, and features focused on customization, accessibility, and community engagement.",
+      "image": "/blogify.png",
+      "tags": ["React.js", "Next.js", "Node.js", "Firebase", "MySQL", "Prisma"],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/mhmalam/blog-hackathon",
+          "icon": "github"
+        },
+        {
+          "name": "Hackathon Vid",
+          "href": "https://youtu.be/4vF6VUuJSwk",
+          "icon": "youtube"
+        }
+      ],
+      "imageClassName": "h-40 w-full object-contain"
     },
     {
       "name": "SaaS Template",
@@ -64,25 +83,6 @@
           "name": "Live Demo",
           "href": "https://nextjs-landing-template-one.vercel.app/",
           "icon": "external-link"
-        }
-      ],
-      "imageClassName": "h-40 w-full object-contain"
-    },
-    {
-      "name": "Blogify",
-      "description": "A modern and intuitive blogging platform that allows users to easily create, share, and manage their blog content, with features focused on customization, accessibility, and community engagement.",
-      "image": "/blogify.png",
-      "tags": ["React.js", "Next.js", "Node.js", "Firebase", "MySQL", "Prisma"],
-      "links": [
-        {
-          "name": "Source",
-          "href": "https://github.com/mhmalam/blog-hackathon",
-          "icon": "github"
-        },
-        {
-          "name": "Hackathon Vid",
-          "href": "https://youtu.be/4vF6VUuJSwk",
-          "icon": "youtube"
         }
       ],
       "imageClassName": "h-40 w-full object-contain"
