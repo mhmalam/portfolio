@@ -24,7 +24,7 @@
     },
     {
       "name": "Dorm Room Viewer",
-      "description": "Housing explorer for 9,000+ Columbia students: building photos, room-by-room floor plans with sizes, walk times to campus, and filters by room type, size, and distance. S3-backed image pipeline with graceful fallbacks and a Columbia CAS (SSO) auth scaffold — currently in public beta with guest browsing.",
+      "description": "Housing explorer for 9,000+ Columbia students: building photos, room-by-room floor plans with sizes, walk times to campus, and filters by room type, size, and distance. S3-backed image pipeline with graceful fallbacks and a Columbia CAS (SSO) auth scaffold — currently a public prototype with guest browsing.",
       "image": "/dormviewer.png",
       "tags": ["React.js", "Vite", "Tailwind CSS", "Framer Motion", "AWS S3"],
       "links": [
