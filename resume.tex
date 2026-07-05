@@ -1,0 +1,95 @@
+\documentclass{resume}
+
+\usepackage[left=0.4in,top=0.2in,right=0.4in,bottom=0.2in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{ifthen}
+
+\renewenvironment{rSubsection}[4]{
+ {\bf #1} \hfill {#2}
+ \ifthenelse{\equal{#3}{}}{}{
+  \\
+  {\em #3} \hfill {\em #4}
+  }\vspace{-6pt}
+  \begin{list}{\textbullet}{\leftmargin=1em \topsep=0pt \itemsep=2pt \parsep=0pt}
+  }{
+  \end{list}
+  \vspace{0pt}
+}
+
+\hypersetup{
+    colorlinks=false,
+    urlcolor=black,
+    linkcolor=black,
+    urlbordercolor=black,
+    pdfborder={0 0 1}
+}
+\name{Mohammed Alam}
+\address{New York, NY \\ \href{mailto:ma4368@columbia.edu}{\underline{ma4368@columbia.edu}} \\ \href{https://www.linkedin.com/in/mohammeda0/}{\underline{linkedin.com/in/mohammeda0}} \\ \href{https://github.com/mhmalam}{\underline{github.com/mhmalam}} \\ \href{https://www.malam.me}{\underline{malam.me}}}
+
+\begin{document}
+
+%--- EDUCATION ---
+\begin{rSection}{Education}
+
+{\bf Columbia University} -- {\em Bachelor of Science in Computer Science} \hfill Expected May 2027 \\
+{\bf Relevant Coursework:}\hspace{1pt} Data Structures \& Algorithms, Computer Systems, Advanced Programming (C), Database Systems, Web Security, User Interface Design
+
+\end{rSection}
+
+%--- EXPERIENCE ---
+\begin{rSection}{Experience}
+
+\begin{rSubsection}{Columbia Housing}{May 2024 -- Present}{Systems \& Operations}{New York, NY}
+\item Developed internal web tooling using JavaScript, TypeScript, React.js, HTML, and CSS to enable 9,000+ students to preview residence halls, serving images stored on AWS S3 through a protected REST API
+\item Collaborated with Directors of Operations and IT Systems using Git, Node.js, Docker, and AWS to design internal tooling aligned with university security and data governance requirements
+\item Built automation services using Node.js, REST APIs, and PostgreSQL to aggregate and synchronize Housing data across systems, eliminating manual data entry and reducing administrative errors
+\end{rSubsection}
+\begin{rSubsection}{Headstarter AI}{July 2024 -- September 2024}{Software Engineering Fellow}{New York, NY}
+\item Shipped 5 production-ready AI applications using Next.js, TypeScript, OpenAI, Pinecone, and Stripe within tight weekly sprints across an 8-week structured fellowship
+\item Won 1st place among 75+ participants at a TikTok-sponsored hackathon building a real-time blogging platform using React.js, Node.js, HTML, and CSS with infinite scroll and live updates
+\item Developed consumer-facing products end-to-end using JavaScript, REST APIs, and PostgreSQL under deadline pressure, delivering working software at each weekly milestone
+\end{rSubsection}
+\begin{rSubsection}{Freelance}{September 2019 -- May 2024}{Software Engineer}{New York, NY}
+\item Designed and delivered 500+ custom websites using JavaScript, HTML, CSS, React.js, and Node.js, translating client requirements into production-ready software with iterative feedback cycles
+\item Scaled backend infrastructure using MongoDB, Redis, and Docker to support high-traffic, low-latency applications serving concurrent users across multiple client deployments
+\item Built and maintained Discord bots using Node.js, REST APIs, and MongoDB, growing one to 13,000,000 users across 13,000+ servers through performance optimization and queue-based architecture
+\end{rSubsection}
+
+\end{rSection}
+
+%--- PROJECTS ---
+\begin{rSection}{Projects}
+
+\begin{rSubsection}{Dorm Room Viewer $|$ Columbia Housing}{June 2025 -- Present}{}{}
+\item Built React.js frontend integrated with AWS S3 for scalable image delivery across residence hall listings
+\item Implemented NextAuth.js authentication with role-based access control for verified Columbia accounts
+\item Architected an admin panel for Housing staff to manage and approve content submissions in real time
+\end{rSubsection}
+\begin{rSubsection}{Dine U $|$ Columbia Dining}{May 2025}{}{}
+\item Developed cross-platform mobile app using React Native, Supabase, and Node.js with real-time menu updates
+\item Trained ML recommendation system on user dining preferences to surface personalized meal suggestions
+\item Deployed serverless APIs via Supabase Edge Functions, reducing infrastructure overhead and response times
+\end{rSubsection}
+\begin{rSubsection}{Multi-Tenant SaaS Dashboard}{November 2024}{}{}
+\item Constructed multi-tenant SaaS platform in Next.js with modular components supporting isolated tenant environments
+\item Configured Firebase Authentication with NextAuth.js for protected routing and persistent session management
+\item Synchronized live tenant data using Redux and Firebase Realtime Database, eliminating manual page refresh
+\end{rSubsection}
+\begin{rSubsection}{Guess The Number}{October 2021 -- June 2024}{}{}
+\item Launched multiplayer Discord bot growing organically to 13,000,000 users across 13,000+ servers
+\item Reduced command latency by architecting a Redis and MongoDB data layer for high-frequency game sessions
+\item Implemented Bull.js queue system on Node.js handling high-volume concurrent traffic under load
+\end{rSubsection}
+
+\end{rSection}
+
+%--- SKILLS ---
+\begin{rSection}{Skills}
+
+\textbf{Languages:}\hspace{1pt} JavaScript, TypeScript, Python, Java, C, SQL \\
+\textbf{Technologies:}\hspace{1pt} React.js, Next.js, React Native, Node.js, Express.js, PostgreSQL, MongoDB, Redis, AWS, Docker, Git
+
+\end{rSection}
+
+\end{document}
