@@ -53,6 +53,12 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* Skills Section */}
+      <section className="scroll-mt-20">
+        <h2 className="title text-3xl sm:text-4xl mb-10">My Stack</h2>
+        <Skills />
+      </section>
+
       {/* Experience Section */}
       <section className="scroll-mt-20">
         <Experience />
@@ -70,12 +76,6 @@ export default async function Home() {
           />
         </div>
         <Projects limit={4} />
-      </section>
-
-      {/* Skills Section */}
-      <section className="scroll-mt-20">
-        <h2 className="title text-3xl sm:text-4xl mb-10">My Stack</h2>
-        <Skills />
       </section>
     </article>
   );

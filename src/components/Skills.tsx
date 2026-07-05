@@ -1,52 +1,62 @@
 import data from "@/data/skills.json";
-import { skillsSchema } from "@/lib/schemas";
+import { skillsSchema, type Skill } from "@/lib/schemas";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 
-const CATEGORY_ORDER: { key: string[]; label: string }[] = [
-	{ key: ["Languages"], label: "Languages" },
-	{ key: ["Frontend"], label: "Frontend" },
-	{ key: ["Backend"], label: "Backend" },
-	{ key: ["Cloud", "Tools"], label: "Cloud & DevOps" },
+const ROWS: string[][] = [
+	["Languages", "Frontend"],
+	["Backend", "Cloud", "Tools"],
 ];
+
+function MarqueeRow({ items, reverse }: { items: Skill[]; reverse?: boolean }) {
+	return (
+		<div className="marquee overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
+			<ul
+				className={cn(
+					"marquee-track flex w-max items-center",
+					reverse && "reverse",
+				)}
+			>
+				{[0, 1].map((copy) =>
+					items.map((skill) => (
+						<li
+							key={`${copy}-${skill.name}`}
+							aria-hidden={copy === 1 || undefined}
+							className="flex items-center gap-2.5 pr-10"
+						>
+							<span className="flex size-9 items-center justify-center rounded-full border border-border bg-card">
+								<Image
+									src={`/icons/${skill.icon}.svg`}
+									alt=""
+									aria-hidden="true"
+									width={18}
+									height={18}
+									className="size-[18px] object-contain"
+								/>
+							</span>
+							<span className="whitespace-nowrap text-sm font-semibold text-foreground/90">
+								{skill.name}
+							</span>
+						</li>
+					)),
+				)}
+			</ul>
+		</div>
+	);
+}
 
 export default function Skills() {
 	const { skills } = skillsSchema.parse(data);
 
 	return (
-		<div className="flex flex-col gap-5">
-			{CATEGORY_ORDER.map(({ key, label }) => {
-				const items = skills.filter((skill) => key.includes(skill.category));
-				if (items.length === 0) return null;
-
-				return (
-					<div
-						key={label}
-						className="flex flex-col gap-3 sm:flex-row sm:items-baseline"
-					>
-						<h3 className="w-32 shrink-0 text-sm font-medium text-muted-foreground">
-							{label}
-						</h3>
-						<ul className="flex flex-wrap gap-2">
-							{items.map((skill) => (
-								<li
-									key={skill.name}
-									className="flex items-center gap-2 rounded-lg border border-border bg-card px-3 py-1.5 text-sm font-medium transition-colors hover:border-foreground/25 hover:bg-accent"
-								>
-									<Image
-										src={`/icons/${skill.icon}.svg`}
-										alt=""
-										aria-hidden="true"
-										width={18}
-										height={18}
-										className="size-[18px] object-contain"
-									/>
-									{skill.name}
-								</li>
-							))}
-						</ul>
-					</div>
-				);
-			})}
+		<div className="flex flex-col gap-6">
+			{ROWS.map((categories, i) => (
+				<MarqueeRow
+					key={i}
+					items={skills.filter((skill) => categories.includes(skill.category))}
+					reverse={i % 2 === 1}
+				/>
+			))}
 		</div>
 	);
 }
