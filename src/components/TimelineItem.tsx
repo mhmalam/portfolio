@@ -19,7 +19,7 @@ export default function TimelineItem({ experience }: Props) {
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-0.5 text-sm font-semibold text-foreground underline decoration-muted-foreground/40 underline-offset-4 transition-colors hover:decoration-foreground"
+          className="inline-flex items-center gap-0.5 text-sm font-semibold text-muted-foreground underline decoration-muted-foreground/40 underline-offset-4 transition-colors hover:text-foreground hover:decoration-foreground"
         >
           {name}
           <ArrowUpRight className="size-3.5" aria-hidden="true" />
