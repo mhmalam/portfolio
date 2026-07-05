@@ -9,20 +9,6 @@
       "imageClassName": "object-contain p-10"
     },
     {
-      "name": "Frosted Studios",
-      "description": "Studio website for a top Roblox game studio with 1.6B+ total visits. Features live game stats pulled from the Roblox Open Cloud API (CCU, visit counts), a contact system with email delivery, and a showcase of the studio's game portfolio.",
-      "image": "/frosted.png",
-      "tags": ["Next.js", "React.js", "Roblox API", "Resend", "Tailwind CSS"],
-      "links": [
-        {
-          "name": "Live Site",
-          "href": "https://frostedstudios.gg/",
-          "icon": "external-link"
-        }
-      ],
-      "imageClassName": "object-cover object-top"
-    },
-    {
       "name": "Dorm Room Viewer",
       "description": "Housing explorer for ~9,000 Columbia students: building photos, room-by-room floor plans with sizes, walk times to campus, and filters by room type, size, and distance. S3-backed image pipeline with graceful fallbacks and a Columbia CAS (SSO) auth scaffold — currently a public prototype with guest browsing.",
       "image": "/dormviewer.png",
