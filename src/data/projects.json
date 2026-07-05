@@ -20,13 +20,13 @@
           "icon": "external-link"
         }
       ],
-      "imageClassName": "h-40 w-full object-cover object-top"
+      "imageClassName": "object-cover object-top"
     },
     {
-      "name": "CU Room — Columbia Housing Explorer",
+      "name": "Dorm Room Viewer",
       "description": "Housing explorer for 9,000+ Columbia students: building photos, room-by-room floor plans with sizes, walk times to campus, and filters by room type, size, and distance. S3-backed image pipeline with graceful fallbacks and a Columbia CAS (SSO) auth scaffold — currently in public beta with guest browsing.",
       "image": "/dormviewer.png",
-      "tags": ["React 19", "Vite", "Tailwind CSS", "Framer Motion", "AWS S3"],
+      "tags": ["React.js", "Vite", "Tailwind CSS", "Framer Motion", "AWS S3"],
       "links": [
         {
           "name": "Live Site",
@@ -34,7 +34,7 @@
           "icon": "external-link"
         }
       ],
-      "imageClassName": "h-40 w-full object-cover"
+      "imageClassName": "object-cover object-top"
     },
     {
       "name": "Dine U",
@@ -53,7 +53,7 @@
           "icon": "github"
         }
       ],
-      "imageClassName": "h-40 w-full object-cover"
+      "imageClassName": "object-cover"
     },
     {
       "name": "Blogify",
@@ -105,7 +105,7 @@
           "icon": "github"
         }
       ],
-      "imageClassName": "h-40 w-full object-top"
+      "imageClassName": "object-cover object-top"
     },
     {
       "name": "Whack-A-Mole",
@@ -124,7 +124,7 @@
           "icon": "youtube"
         }
       ],
-      "imageClassName": "h-40 w-full object-cover object-top"
+      "imageClassName": "object-cover object-top"
     },
     {
       "name": "Inventory Tracking",
@@ -143,7 +143,7 @@
           "icon": "external-link"
         }
       ],
-      "imageClassName": "h-40 w-full object-fill"
+      "imageClassName": "object-contain p-6"
     }
   ]
 }

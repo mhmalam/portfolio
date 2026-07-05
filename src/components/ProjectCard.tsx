@@ -33,14 +33,11 @@ export function ProjectCard({ project }: Props) {
           />
         )}
         {/* Legibility gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
 
-        {/* Overlay content */}
+        {/* Overlay: title + tags */}
         <div className="absolute inset-x-0 bottom-0 flex flex-col gap-2.5 p-5 sm:p-6">
           <h3 className="text-xl font-bold text-white sm:text-2xl">{name}</h3>
-          <p className="line-clamp-2 max-w-xl text-xs leading-relaxed text-white/75 sm:text-sm">
-            {description}
-          </p>
           <div className="flex flex-wrap items-center gap-1.5">
             {tags.map((tag) => (
               <span
@@ -67,6 +64,11 @@ export function ProjectCard({ project }: Props) {
           </div>
         )}
       </div>
+
+      {/* Full description below the image */}
+      <p className="p-5 text-sm leading-relaxed text-muted-foreground sm:px-6">
+        {description}
+      </p>
     </div>
   );
 }

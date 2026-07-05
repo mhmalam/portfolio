@@ -7,11 +7,11 @@
       "location": "New York, NY",
       "start": "May 2024",
       "description": [
-        "Leading development of CU Room, a housing explorer serving 9,000+ students with room-by-room floor plans, walk-time modeling, an S3-backed image pipeline, and a Columbia CAS (SSO) auth scaffold. Also build internal tools and automation scripts in Node.js and PostgreSQL that synchronize Housing data across systems, replacing manual data-entry workflows."
+        "Leading development of Dorm Room Viewer, a housing explorer serving 9,000+ students with room-by-room floor plans, walk-time modeling, an S3-backed image pipeline, and a Columbia CAS (SSO) auth scaffold. Also build internal tools and automation scripts in Node.js and PostgreSQL that synchronize Housing data across systems, replacing manual data-entry workflows."
       ],
       "links": [
         {
-          "name": "CU Room (Beta)",
+          "name": "Dorm Room Viewer (Beta)",
           "href": "https://curoom.vercel.app/",
           "icon": "external-link"
         }
