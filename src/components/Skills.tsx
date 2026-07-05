@@ -22,18 +22,16 @@ function MarqueeRow({ items, reverse }: { items: Skill[]; reverse?: boolean }) {
 						<li
 							key={`${copy}-${skill.name}`}
 							aria-hidden={copy === 1 || undefined}
-							className="flex items-center gap-2.5 pr-10"
+							className="flex items-center gap-2 pr-7"
 						>
-							<span className="flex size-9 items-center justify-center rounded-full border border-border bg-card">
-								<Image
-									src={`/icons/${skill.icon}.svg`}
-									alt=""
-									aria-hidden="true"
-									width={18}
-									height={18}
-									className="size-[18px] object-contain"
-								/>
-							</span>
+							<Image
+								src={`/icons/${skill.icon}.svg`}
+								alt=""
+								aria-hidden="true"
+								width={20}
+								height={20}
+								className="size-5 object-contain"
+							/>
 							<span className="whitespace-nowrap text-sm font-semibold text-foreground/90">
 								{skill.name}
 							</span>
