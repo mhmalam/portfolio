@@ -7,7 +7,7 @@
       "location": "New York, NY",
       "start": "May 2024",
       "description": [
-        "Leading development of Dorm Room Viewer, a housing explorer serving 9,000+ students with room-by-room floor plans, walk-time modeling, an S3-backed image pipeline, and a Columbia CAS (SSO) auth scaffold. Also build internal tooling in Node.js and Google Apps Script on top of the Asana API — scheduled and on-demand automation that creates, updates, and cleans up room and operations records, aggregates data for reporting, and replaces manual data-entry workflows across Housing systems."
+        "Leading development of Dorm Room Viewer, a housing explorer serving 9,000+ students with room-by-room floor plans, walk-time modeling, an S3-backed image pipeline, and a Columbia CAS (SSO) auth scaffold. Also engineer backend automation tooling in Node.js — scheduled jobs and on-demand scripts that automate operational workflows, synchronize and validate housing data across systems, and eliminate manual processes for the operations team."
       ],
       "links": [
         {
