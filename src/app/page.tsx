@@ -20,30 +20,15 @@ export default async function Home() {
       <section className="relative pt-12 pb-8">
         <div className="flex flex-col-reverse gap-8 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex flex-col">
-            <div className="mb-4 flex items-center gap-2 text-sm text-muted-foreground">
-              <span className="relative flex size-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
-                <span className="relative inline-flex size-2 rounded-full bg-emerald-500"></span>
-              </span>
-              Open to software engineering internships &amp; new-grad roles
-            </div>
             <h1 className="title text-5xl sm:text-6xl mb-5">
               Mohammed Alam
             </h1>
             <p className="text-xl sm:text-2xl font-semibold mb-4">
               Software Engineer | CS @ <span className="text-foreground whitespace-nowrap">Columbia University</span>
             </p>
-            <p className="mb-2 flex items-center gap-1.5 text-sm text-muted-foreground">
+            <p className="mb-8 flex items-center gap-1.5 text-sm text-muted-foreground">
               <MapPin className="size-4" aria-hidden="true" />
               New York, NY
-            </p>
-            <p className="mb-8 max-w-xl leading-relaxed text-muted-foreground">
-              I build software people actually use — a Discord game played by{" "}
-              <span className="font-medium text-foreground">13M+ users</span>, housing
-              tools serving{" "}
-              <span className="font-medium text-foreground">9,000+ Columbia students</span>,
-              and <span className="font-medium text-foreground">500+ projects</span>{" "}
-              shipped for freelance clients.
             </p>
 
             {/* CTA Buttons */}

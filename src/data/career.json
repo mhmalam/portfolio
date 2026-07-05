@@ -4,23 +4,21 @@
       "name": "Columbia Housing",
       "href": "https://housing.columbia.edu/",
       "title": "Systems & Operations Assistant",
-      "logo": "/columbia.jpg",
+      "location": "New York, NY",
       "start": "May 2024",
       "description": [
-        "Leading development of Dorm Room Viewer, a web platform for 9,000+ Columbia students to preview residence halls, serving images from AWS S3 through a protected REST API.",
-        "Built Node.js automation services that aggregate and synchronize Housing data across systems, eliminating manual data entry and reducing administrative errors."
+        "Leading development of Dorm Room Viewer, a Next.js platform serving 9,000+ students with an S3-backed image pipeline behind a protected REST API and role-based access control. Also build internal tools and automation scripts in Node.js and PostgreSQL that synchronize Housing data across systems, replacing manual data-entry workflows."
       ]
     },
     {
       "name": "Headstarter AI",
       "href": "https://www.linkedin.com/company/headstarterai/",
       "title": "Software Engineering Fellow",
-      "logo": "/headstarter.jpg",
+      "location": "New York, NY",
       "start": "July 2024",
       "end": "September 2024",
       "description": [
-        "Shipped 5 production-ready AI applications in weekly sprints using Next.js, TypeScript, OpenAI, Pinecone, and Stripe.",
-        "Won 1st place among 75+ participants at a TikTok-sponsored hackathon with a real-time blogging platform featuring infinite scroll and live updates."
+        "Shipped 5 production AI applications in weekly sprints — RAG pipelines with OpenAI and Pinecone vector search, Stripe billing, and Next.js/TypeScript frontends. Won 1st place among 75+ participants at a TikTok-sponsored hackathon with a real-time blogging platform."
       ],
       "links": [
         {
@@ -34,12 +32,11 @@
       "name": "Freelance",
       "href": "",
       "title": "Software Engineer",
-      "logo": "/freelance.svg",
+      "location": "New York, NY",
       "start": "September 2019",
       "end": "May 2024",
       "description": [
-        "Designed and delivered 500+ custom websites and applications for clients using React.js, Node.js, and MongoDB.",
-        "Built and scaled Discord bots — growing one to 13,000,000 users across 13,000+ servers — with Redis caching and queue-based architecture for low-latency performance."
+        "Delivered 500+ web applications and Discord bots for clients, scaling one bot to 13,000,000 users across 13,000+ servers on a Redis + MongoDB data layer with Bull.js job queues sustaining low-latency performance under high-volume concurrent traffic."
       ]
     }
   ]
