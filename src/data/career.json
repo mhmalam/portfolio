@@ -43,7 +43,7 @@
       "start": "September 2019",
       "end": "May 2024",
       "description": [
-        "Delivered 500+ web applications and Discord bots for clients, scaling one bot to 13,000,000 users across 13,000+ servers on a Redis + MongoDB data layer with Bull.js job queues sustaining low-latency performance under high-volume concurrent traffic."
+        "Delivered 500+ web applications and Discord bots for clients. Scaled one bot to 13,000,000 users across 13,000+ servers, engineering its Redis + MongoDB data layer and Bull.js job queues to sustain low-latency performance under heavy concurrent load."
       ]
     }
   ]
