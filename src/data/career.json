@@ -7,7 +7,7 @@
       "location": "New York, NY",
       "start": "May 2024",
       "description": [
-        "Leading development of Dorm Room Viewer, a housing platform serving 9,000+ students with room-level floor plans, walk-time estimation, an AWS S3 image pipeline, and Columbia CAS (SSO) authentication. Designed and built internal tools and Node.js automation services that help manage operations across a portfolio of ~40 residential buildings and 6,000+ rooms — automating workflows, synchronizing housing data across systems, and improving the reliability and efficiency of student-housing operations."
+        "Leading development of Dorm Room Viewer, a housing platform featuring room-level floor plans, walk-time estimation, an AWS S3 image pipeline, and Columbia CAS (SSO) authentication. Designed and built internal tools and Node.js automation services that support operations across approximately 40 residential buildings and 6,000+ rooms by automating workflows, synchronizing housing data across systems, and improving operational reliability and efficiency."
       ],
       "links": [
         {
