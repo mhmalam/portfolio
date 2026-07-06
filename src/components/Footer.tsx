@@ -10,7 +10,17 @@ export default function Footer() {
           <span>&copy; {new Date().getFullYear()}</span>{" "}
           <Link className="link" href="/">
             malam.me
-          </Link>
+          </Link>{" "}
+          <span>
+            &middot; self-hosted on{" "}
+            <Link
+              className="link"
+              href="https://github.com/mhmalam/mini-vercel"
+              target="_blank"
+            >
+              mini-vercel
+            </Link>
+          </span>
         </p>
       </section>
     </footer>

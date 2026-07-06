@@ -1,6 +1,30 @@
 {
   "projects": [
     {
+      "name": "mini-vercel",
+      "description": "My own little Vercel — a self-hosted deployment platform that turns a git push into a live HTTPS site, and it's serving the page you're reading right now (malam.me migrated off Vercel entirely). HMAC-verified GitHub webhooks queue builds on Redis; a worker clones the repo, builds the Dockerfile, health-checks the new container, then rewrites routes before stopping the old one — zero-downtime deploys with instant rollbacks. Every project gets its own *.malam.me subdomain under a wildcard TLS cert, managed from a dashboard with live build logs or a CLI, all on a single 1GB EC2 box.",
+      "image": "/minivercel.svg",
+      "tags": ["TypeScript", "Fastify", "PostgreSQL", "Redis", "Docker", "nginx", "Go", "Next.js"],
+      "links": [
+        {
+          "name": "Live (this site)",
+          "href": "https://www.malam.me",
+          "icon": "external-link"
+        },
+        {
+          "name": "Demo",
+          "href": "https://youtu.be/vKAdaMZbPIU",
+          "icon": "youtube"
+        },
+        {
+          "name": "Source",
+          "href": "https://github.com/mhmalam/mini-vercel",
+          "icon": "github"
+        }
+      ],
+      "imageClassName": "object-contain p-10"
+    },
+    {
       "name": "Guess The Number",
       "description": "Multiplayer Discord game grown organically to 13,000,000+ users across 13,000+ servers. Built on a Redis + MongoDB data layer with a Bull.js queue system to keep command latency low under high-volume concurrent traffic.",
       "image": "/gtn.png",
@@ -40,96 +64,6 @@
         }
       ],
       "imageClassName": "object-cover"
-    },
-    {
-      "name": "Blogify",
-      "description": "1st place winner among 75+ participants at a TikTok-sponsored hackathon. A real-time blogging platform with infinite scroll, live updates, and features focused on customization, accessibility, and community engagement.",
-      "image": "/blogify.png",
-      "tags": ["React.js", "Next.js", "Node.js", "Firebase", "MySQL", "Prisma"],
-      "links": [
-        {
-          "name": "Source",
-          "href": "https://github.com/mhmalam/blog-hackathon",
-          "icon": "github"
-        },
-        {
-          "name": "Hackathon Vid",
-          "href": "https://youtu.be/4vF6VUuJSwk",
-          "icon": "youtube"
-        }
-      ],
-      "imageClassName": "object-contain p-6"
-    },
-    {
-      "name": "SaaS Template",
-      "description": "A sleek, modern Next.js landing page template for showcasing SaaS products or services with customizable sections and a responsive design.",
-      "image": "/template.png",
-      "tags": ["Next.js", "React.js", "Tailwind CSS", "Firebase"],
-      "links": [
-        {
-          "name": "Source",
-          "href": "https://github.com/mhmalam/nextjs-landing-template",
-          "icon": "github"
-        },
-        {
-          "name": "Live Demo",
-          "href": "https://nextjs-landing-template-one.vercel.app/",
-          "icon": "external-link"
-        }
-      ],
-      "imageClassName": "object-contain p-6"
-    },
-    {
-      "name": "Discord Metric System",
-      "description": "A real-time metric collection and visualization system built with the MERN stack to process and visualize Discord server data with high performance.",
-      "image": "/metrics.webp",
-      "tags": ["Redis", "MongoDB", "Express.js", "ReactJS"],
-      "links": [
-        {
-          "name": "Source",
-          "href": "https://github.com/mhmalam/ChatFlow",
-          "icon": "github"
-        }
-      ],
-      "imageClassName": "object-cover object-top"
-    },
-    {
-      "name": "Whack-A-Mole",
-      "description": "A real-time interactive Whack-A-Mole game that integrates hardware with a dynamic React.js interface using WebSocket communication and physical sensors.",
-      "image": "/whackamole.png",
-      "tags": ["Node.js", "React.js", "Socket.IO", "Express.js"],
-      "links": [
-        {
-          "name": "Source",
-          "href": "https://github.com/mhmalam/Whack-A-Mole",
-          "icon": "github"
-        },
-        {
-          "name": "Live Demo",
-          "href": "https://youtu.be/c9yB0W9OVdE",
-          "icon": "youtube"
-        }
-      ],
-      "imageClassName": "object-cover object-top"
-    },
-    {
-      "name": "Inventory Tracking",
-      "description": "A full-featured inventory management system that enables real-time tracking and management of stock levels with a sleek UI and efficient backend.",
-      "image": "/inventory.png",
-      "tags": ["React.js", "Firebase", "Next.js"],
-      "links": [
-        {
-          "name": "Source",
-          "href": "https://github.com/mhmalam/inventory-management",
-          "icon": "github"
-        },
-        {
-          "name": "Live Demo",
-          "href": "https://inventory-management-kjnctuglo-yincards-projects.vercel.app/",
-          "icon": "external-link"
-        }
-      ],
-      "imageClassName": "object-contain p-6"
     }
   ]
 }
