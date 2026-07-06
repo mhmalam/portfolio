@@ -4,7 +4,6 @@
       "name": "mini-vercel",
       "description": "My own little Vercel — a self-hosted deployment platform that turns a git push into a live HTTPS site, and it's serving the page you're reading right now (malam.me migrated off Vercel entirely). HMAC-verified GitHub webhooks queue builds on Redis; a worker clones the repo, builds the Dockerfile, health-checks the new container, then rewrites routes before stopping the old one — zero-downtime deploys with instant rollbacks. Every project gets its own *.malam.me subdomain under a wildcard TLS cert, managed from a dashboard with live build logs or a CLI, all on a single 1GB EC2 box.",
       "image": "/minivercel.svg",
-      "video": "https://youtu.be/2Pj_Sps_ALU",
       "tags": ["TypeScript", "Fastify", "PostgreSQL", "Redis", "Docker", "nginx", "Go", "Next.js"],
       "links": [
         {
