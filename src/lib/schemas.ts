@@ -13,6 +13,7 @@ const project = z.object({
   description: z.string(),
   href: z.string().url().optional(),
   image: z.string().optional(),
+  video: z.string().url().optional(),
   imageClassName: z.string(), // Added property here
   tags: z.array(z.string()),
   links: z.array(iconLink),

@@ -3,13 +3,32 @@ import { Project } from "@/lib/schemas";
 import Image from "next/image";
 import Link from "next/link";
 import Icon from "./Icon";
+import TerminalVideo from "./TerminalVideo";
 
 interface Props {
   project: Project;
 }
 
+function youtubeId(url: string) {
+  return url.match(/(?:youtu\.be\/|[?&]v=)([\w-]{11})/)?.[1];
+}
+
 export function ProjectCard({ project }: Props) {
-  const { name, description, image, tags, links, imageClassName } = project;
+  const { name, description, image, video, tags, links, imageClassName } =
+    project;
+
+  const videoId = video ? youtubeId(video) : undefined;
+
+  if (videoId) {
+    return (
+      <div className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <TerminalVideo videoId={videoId} name={name} tags={tags} links={links} />
+        <p className="p-5 text-sm leading-relaxed text-muted-foreground sm:px-6">
+          {description}
+        </p>
+      </div>
+    );
+  }
 
   return (
     <div className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
