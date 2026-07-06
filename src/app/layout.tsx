@@ -16,7 +16,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.malam.me"),
-  title: "Mohammed Alam — Software Engineer",
+  title: "Alam - Portfolio",
   description:
     "Software engineer and CS student at Columbia University. Built a Discord game played by 13M+ users, housing tools serving 9,000+ students, and 500+ freelance projects.",
   openGraph: {
