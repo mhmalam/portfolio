@@ -34,7 +34,7 @@
     },
     {
       "name": "Dorm Room Viewer",
-      "description": "Housing explorer for ~9,000 Columbia students: building photos, room-by-room floor plans with sizes, walk times to campus, and filters by room type, size, and distance. S3-backed image pipeline with graceful fallbacks and a Columbia CAS (SSO) auth scaffold — currently a public prototype with guest browsing.",
+      "description": "Housing explorer for ~6,000 Columbia students with building photos, room-level floor plans, walk times, and filters by room type, size, and distance. Built an AWS S3 image pipeline with graceful fallbacks and Columbia CAS (SSO) authentication for staff tools.",
       "image": "/dormviewer.png",
       "tags": ["React.js", "Vite", "Tailwind CSS", "Framer Motion", "AWS S3"],
       "links": [
@@ -47,23 +47,18 @@
       "imageClassName": "object-cover object-top"
     },
     {
-      "name": "Dine U",
-      "description": "Cross-platform dining companion app for university students with real-time dining hall menus, an ML recommendation system trained on user preferences, and serverless APIs deployed on Supabase Edge Functions.",
-      "image": "/dineu.png",
-      "tags": ["React Native", "TypeScript", "Python", "Node.js", "Supabase"],
-      "links": [
-        {
-          "name": "Live Demo",
-          "href": "https://www.youtube.com/watch?v=AfYKsCUvVpM",
-          "icon": "youtube"
-        },
-        {
-          "name": "Source",
-          "href": "https://github.com/mkforde/DineU",
-          "icon": "github"
-        }
-      ],
-      "imageClassName": "object-cover"
+  "name": "Doorman",
+  "description": "Open-source Asana project builder that adds custom workflows and bulk-editing capabilities on top of the Asana API, including features not available in Asana's standard interface. Imports spreadsheets or existing projects into an Asana-style staging editor with Ctrl+A and multi-select, bulk completion/due-date/delete actions, drag-and-drop task and section management, custom fields, filtering, sorting, column controls, and project templates. Builds and syncs changes through batched API requests with validation, authentication, rate limiting, snapshots, and Docker deployment.",
+  "image": "/doorman.png",
+  "tags": ["TypeScript", "React", "Express", "Asana API", "Docker"],
+  "links": [
+    {
+      "name": "Source",
+      "href": "https://github.com/mhmalam/doorman",
+      "icon": "github"
     }
+  ],
+  "imageClassName": "object-cover"
+}
   ]
 }
