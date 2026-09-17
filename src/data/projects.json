@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "mini-vercel",
-      "description": "My own little Vercel — a self-hosted deployment platform that turns a git push into a live HTTPS site, and it's serving the page you're reading right now (malam.me migrated off Vercel entirely). HMAC-verified GitHub webhooks queue builds on Redis; a worker clones the repo, builds the Dockerfile, health-checks the new container, then rewrites routes before stopping the old one — zero-downtime deploys with instant rollbacks. Every project gets its own *.malam.me subdomain under a wildcard TLS cert, managed from a dashboard with live build logs or a CLI, all on a single 1GB EC2 box.",
+      "description": "Self-hosted deployment platform that turns a git push into a live HTTPS site, and it's serving the page you're reading right now (malam.me migrated off Vercel entirely). HMAC-verified GitHub webhooks queue builds on Redis; a worker clones the repo, builds the Dockerfile, health-checks the new container, then rewrites routes before stopping the old one for zero-downtime deploys and instant rollbacks. Every project gets its own *.malam.me subdomain under a wildcard TLS cert, managed from a dashboard with live build logs or a CLI, all on a single 1GB EC2 box.",
       "image": "/minivercel.svg",
       "tags": ["TypeScript", "Fastify", "PostgreSQL", "Redis", "Docker", "nginx", "Go", "Next.js"],
       "links": [
@@ -26,7 +26,7 @@
     },
     {
       "name": "Guess The Number",
-      "description": "Multiplayer Discord game grown organically to 13,000,000+ users across 13,000+ servers. Built on a Redis + MongoDB data layer with a Bull.js queue system to keep command latency low under high-volume concurrent traffic.",
+      "description": "Multiplayer Discord game serving 13,000,000+ users across 13,000+ servers. Uses Redis and MongoDB for game state and a Bull.js queue system to handle high-volume concurrent commands while keeping command latency low.",
       "image": "/gtn.png",
       "tags": ["Node.js", "MongoDB", "Redis", "Bull.js"],
       "links": [],
@@ -34,7 +34,7 @@
     },
     {
       "name": "Dorm Room Viewer",
-      "description": "Housing explorer for ~6,000 Columbia students with building photos, room-level floor plans, walk times, and filters by room type, size, and distance. Built an AWS S3 image pipeline with graceful fallbacks and Columbia CAS (SSO) authentication for staff tools.",
+      "description": "Housing explorer for ~6,000 Columbia students with building photos, room-level floor plans, walk times, and filters by room type, size, and distance. Uses AWS S3 for image storage with graceful fallbacks and Columbia CAS (SSO) authentication for staff tools.",
       "image": "/dormviewer.png",
       "tags": ["React.js", "Vite", "Tailwind CSS", "Framer Motion", "AWS S3"],
       "links": [
@@ -47,18 +47,37 @@
       "imageClassName": "object-cover object-top"
     },
     {
-  "name": "Doorman",
-  "description": "Open-source Asana project builder that adds custom workflows and bulk-editing capabilities on top of the Asana API, including features not available in Asana's standard interface. Imports spreadsheets or existing projects into an Asana-style staging editor with Ctrl+A and multi-select, bulk completion/due-date/delete actions, drag-and-drop task and section management, custom fields, filtering, sorting, column controls, and project templates. Builds and syncs changes through batched API requests with validation, authentication, rate limiting, snapshots, and Docker deployment.",
-  "image": "/doorman.png",
-  "tags": ["TypeScript", "React", "Express", "Asana API", "Docker"],
-  "links": [
+      "name": "Doorman",
+      "description": "Open-source Asana project builder that adds custom workflows and bulk-editing capabilities on top of the Asana API, including features not available in Asana's standard interface. Imports spreadsheets or existing projects into an Asana-style staging editor with Ctrl+A and multi-select, bulk completion/due-date/delete actions, drag-and-drop task and section management, custom fields, filtering, sorting, column controls, and project templates. Builds and syncs changes through batched API requests with validation, authentication, rate limiting, snapshots, and Docker deployment.",
+      "image": "/doorman.png",
+      "tags": ["TypeScript", "React", "Express", "Asana API", "Docker"],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/mhmalam/doorman",
+          "icon": "github"
+        }
+      ],
+      "imageClassName": "object-cover"
+    },
     {
-      "name": "Source",
-      "href": "https://github.com/mhmalam/doorman",
-      "icon": "github"
+      "name": "Dine U",
+      "description": "Cross-platform dining companion app for university students with real-time dining hall menus, an ML recommendation system trained on user preferences, and serverless APIs deployed on Supabase Edge Functions.",
+      "image": "/dineu.png",
+      "tags": ["React Native", "TypeScript", "Python", "Node.js", "Supabase"],
+      "links": [
+        {
+          "name": "Live Demo",
+          "href": "https://www.youtube.com/watch?v=AfYKsCUvVpM",
+          "icon": "youtube"
+        },
+        {
+          "name": "Source",
+          "href": "https://github.com/mkforde/DineU",
+          "icon": "github"
+        }
+      ],
+      "imageClassName": "object-cover"
     }
-  ],
-  "imageClassName": "object-cover"
-}
   ]
 }
