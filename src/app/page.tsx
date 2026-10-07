@@ -9,16 +9,15 @@ import {
   FileText,
   MapPin
 } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default async function Home() {
 
   return (
-    <article className="flex flex-col gap-20 pb-16">
+    <article className="flex flex-col gap-16 pb-16">
       {/* Hero Section */}
       <section className="relative pt-12 pb-8">
-        <div className="flex flex-col-reverse gap-8 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col">
           <div className="flex flex-col">
             <h1 className="title text-5xl sm:text-6xl mb-5">
               Mohammed Alam
@@ -42,20 +41,12 @@ export default async function Home() {
               <Socials />
             </div>
           </div>
-          <Image
-            src="/alam.jpg"
-            alt="Mohammed Alam"
-            width={175}
-            height={175}
-            priority
-            className="size-28 flex-shrink-0 rounded-full border-2 border-border object-cover shadow-md sm:size-40"
-          />
         </div>
       </section>
 
       {/* Skills Section */}
       <section className="scroll-mt-20">
-        <h2 className="title text-3xl sm:text-4xl mb-10">My Stack</h2>
+        <h2 className="title mb-8 text-2xl sm:text-3xl">My Stack</h2>
         <Skills />
       </section>
 
@@ -66,16 +57,17 @@ export default async function Home() {
 
       {/* Projects Section */}
       <section className="scroll-mt-20">
-        <div className="flex sm:items-end sm:justify-between gap-4 mb-10">
-          <h2 className="title text-3xl sm:text-4xl">Featured Projects</h2>
+        <div className="mb-8 flex items-baseline justify-between gap-4">
+          <h2 className="title text-2xl sm:text-3xl">Featured Projects</h2>
           <LinkWithIcon
             href="/projects"
             position="right"
-            icon={<ArrowRightIcon className="size-5" />}
-            text="View All Projects"
+            icon={<ArrowRightIcon className="size-4" />}
+            text="View all"
+            className="text-sm"
           />
         </div>
-        <Projects limit={4} />
+        <Projects limit={2} />
       </section>
     </article>
   );

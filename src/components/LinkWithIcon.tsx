@@ -17,7 +17,7 @@ export default function LinkWithIcon({
   className,
 }: LinkWithIconProps) {
   return (
-    <Link href={href} className={`link flex items-center gap-2 font-light transition-colors ${className || ''}`}>
+    <Link href={href} className={`link flex items-center gap-1.5 font-medium transition-colors ${className || ''}`}>
       {position === "left" && icon}
       <span>{text}</span>
       {position === "right" && icon}

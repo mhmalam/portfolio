@@ -2,9 +2,9 @@
   "projects": [
     {
       "name": "mini-vercel",
-      "description": "Self-hosted deployment platform that turns a git push into a live HTTPS site, and it's serving the page you're reading right now (malam.me migrated off Vercel entirely). HMAC-verified GitHub webhooks queue builds on Redis; a worker clones the repo, builds the Dockerfile, health-checks the new container, then rewrites routes before stopping the old one for zero-downtime deploys and instant rollbacks. Every project gets its own *.malam.me subdomain under a wildcard TLS cert, managed from a dashboard with live build logs or a CLI, all on a single 1GB EC2 box.",
+      "description": "Self-hosted CI/CD that turns a GitHub push into a live HTTPS deploy in under 60 seconds. Zero-downtime releases through container health checks and atomic Nginx upstream swaps on a single EC2 box. Routes 10+ project subdomains through a custom Go reverse proxy, managed from a CLI and a Next.js dashboard. It serves this site.",
       "image": "/minivercel.svg",
-      "tags": ["TypeScript", "Fastify", "PostgreSQL", "Redis", "Docker", "nginx", "Go", "Next.js"],
+      "tags": ["TypeScript", "Fastify", "PostgreSQL", "Redis", "Docker", "Nginx", "Go", "Next.js"],
       "links": [
         {
           "name": "Live (this site)",
@@ -26,7 +26,7 @@
     },
     {
       "name": "Guess The Number",
-      "description": "Multiplayer Discord game serving 13,000,000+ users across 13,000+ servers. Uses Redis and MongoDB for game state and a Bull.js queue system to handle high-volume concurrent commands while keeping command latency low.",
+      "description": "Multiplayer Discord game scaled to 13M+ members across 13K+ servers, processing 1M+ commands per day. Cut command latency from 450 ms to 180 ms by sharding Redis and MongoDB state per session, and held sub-200 ms p95 through 10x traffic spikes with Bull.js job queues.",
       "image": "/gtn.png",
       "tags": ["Node.js", "MongoDB", "Redis", "Bull.js"],
       "links": [],
@@ -34,9 +34,9 @@
     },
     {
       "name": "Dorm Room Viewer",
-      "description": "Housing explorer for ~6,000 Columbia students with building photos, room-level floor plans, walk times, and filters by room type, size, and distance. Uses AWS S3 for image storage with graceful fallbacks and Columbia CAS (SSO) authentication for staff tools.",
+      "description": "Housing explorer for 6,000+ Columbia students across 40 buildings: room photos, floor plans with sizes, walk times to campus, and filters by room type, size, and distance. Serves 15,000+ images through an AWS S3 pipeline with graceful fallbacks, with an admin CMS for Housing staff and Columbia CAS SSO via NextAuth.js. Public prototype with guest browsing.",
       "image": "/dormviewer.png",
-      "tags": ["React.js", "Vite", "Tailwind CSS", "Framer Motion", "AWS S3"],
+      "tags": ["React", "Vite", "Tailwind CSS", "Framer Motion", "AWS S3", "NextAuth.js"],
       "links": [
         {
           "name": "Live Site",
@@ -48,7 +48,7 @@
     },
     {
       "name": "Doorman",
-      "description": "Open-source Asana project builder that adds custom workflows and bulk-editing capabilities on top of the Asana API, including features not available in Asana's standard interface. Imports spreadsheets or existing projects into an Asana-style staging editor with Ctrl+A and multi-select, bulk completion/due-date/delete actions, drag-and-drop task and section management, custom fields, filtering, sorting, column controls, and project templates. Builds and syncs changes through batched API requests with validation, authentication, rate limiting, snapshots, and Docker deployment.",
+      "description": "Open-source Asana project builder used daily by Columbia Housing across 40 buildings. Cuts per-building Asana setup from 2 hours to 1 minute by parsing raw room-inventory spreadsheets, and removes manual entry for 6,000+ rooms by auto-detecting buildings, prefixing rooms, and generating floor sections. Adds bulk editing, drag-and-drop sections, templates, and batched API syncs with rate limiting and snapshots.",
       "image": "/doorman.png",
       "tags": ["TypeScript", "React", "Express", "Asana API", "Docker"],
       "links": [
@@ -62,7 +62,7 @@
     },
     {
       "name": "Dine U",
-      "description": "Cross-platform dining companion app for university students with real-time dining hall menus, an ML recommendation system trained on user preferences, and serverless APIs deployed on Supabase Edge Functions.",
+      "description": "Cross-platform dining app for university students with real-time dining hall menus, an ML recommendation system trained on user preferences, and serverless APIs on Supabase Edge Functions.",
       "image": "/dineu.png",
       "tags": ["React Native", "TypeScript", "Python", "Node.js", "Supabase"],
       "links": [

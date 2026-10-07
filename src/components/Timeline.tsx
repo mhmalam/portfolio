@@ -7,10 +7,15 @@ interface Props {
 
 export default function Timeline({ experience }: Props) {
   return (
-    <ul>
+    <ol className="flex flex-col">
       {experience.map((exp, id) => (
-        <TimelineItem key={id} experience={exp} />
+        <TimelineItem
+          key={id}
+          experience={exp}
+          isFirst={id === 0}
+          isLast={id === experience.length - 1}
+        />
       ))}
-    </ul>
+    </ol>
   );
 }
